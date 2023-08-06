@@ -57,11 +57,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Fantastic City Generator\Scripts\RunTimeSample.cs" />
+    <Compile Include="Assets\TrainDragDrop.cs" />
     <Compile Include="Assets\Fantastic City Generator\Scripts\CityGenerator.cs" />
+    <Compile Include="Assets\Train.cs" />
     <Compile Include="Assets\Fantastic City Generator\Scripts\FreeCamera.cs" />
     <Compile Include="Assets\Fantastic City Generator\Water\WaterSample.cs" />
     <Compile Include="Assets\Fantastic City Generator\Scripts\TrafficSystem.cs" />
     <Compile Include="Assets\Fantastic City Generator\Scripts\TrafficLight.cs" />
+    <Compile Include="Assets\Cube.cs" />
     <Compile Include="Assets\Fantastic City Generator\Traffic System\DataSpawn.cs" />
     <Compile Include="Assets\Fantastic City Generator\Player\Player Mobile\MobileControl.cs" />
     <Compile Include="Assets\Fantastic City Generator\Player\Player\CharacterControl.cs" />
@@ -70,6 +73,7 @@
     <Compile Include="Assets\Fantastic City Generator\Scripts\TFShiftHand2.cs" />
     <Compile Include="Assets\Fantastic City Generator\WayTool\FCGWaypointsContainer.cs" />
     <Compile Include="Assets\Fantastic City Generator\Scripts\TrafficLights2.cs" />
+    <Compile Include="Assets\Cargo.cs" />
     <Compile Include="Assets\Fantastic City Generator\Scripts\MeshSize.cs" />
     <Compile Include="Assets\Fantastic City Generator\Scripts\TrafficCar.cs" />
   </ItemGroup>

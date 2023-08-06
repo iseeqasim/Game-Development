@@ -347,6 +347,8 @@
 -r:"Library/Bee/artifacts/1300b0aE.dag/Unity.VSCode.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aE.dag/UnityEngine.UI.ref.dll"
+"Assets/Cargo.cs"
+"Assets/Cube.cs"
 "Assets/Fantastic City Generator/Player/Player Mobile/MobileControl.cs"
 "Assets/Fantastic City Generator/Player/Player/CharacterControl.cs"
 "Assets/Fantastic City Generator/Scripts/CityGenerator.cs"
@@ -363,6 +365,8 @@
 "Assets/Fantastic City Generator/Traffic System/DataSpawn.cs"
 "Assets/Fantastic City Generator/Water/WaterSample.cs"
 "Assets/Fantastic City Generator/WayTool/FCGWaypointsContainer.cs"
+"Assets/Train.cs"
+"Assets/TrainDragDrop.cs"
 -langversion:9.0
 
 /deterministic
