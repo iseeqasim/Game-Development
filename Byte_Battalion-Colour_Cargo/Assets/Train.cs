@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Train : MonoBehaviour
 {
-    public Cube.CargoColor trainColor;
+    public CargoContainer.CargoColor trainColor;
     public GameObject[] cargoContainers; // Array to hold references to the cargo containers
 
     private int nextAvailableCargoIndex = 0;
@@ -28,7 +28,7 @@ public class Train : MonoBehaviour
             // Adjust the size of the box collider when a new container is added
             BoxCollider boxCollider = GetComponent<BoxCollider>();
             Vector3 colliderSize = boxCollider.size;
-            colliderSize.x += 9f; // Add 9 units to the X size of the box collider
+            colliderSize.z += 0.14f; // Add 9 units to the X size of the box collider
             boxCollider.size = colliderSize;
         }
     }
@@ -45,7 +45,7 @@ public class Train : MonoBehaviour
             // Adjust the size of the box collider when a container is deactivated
             BoxCollider boxCollider = GetComponent<BoxCollider>();
             Vector3 colliderSize = boxCollider.size;
-            colliderSize.x -= 9f; // Subtract 9 units from the X size of the box collider
+            colliderSize.z -= 0.14f; // Subtract 9 units from the X size of the box collider
             boxCollider.size = colliderSize;
         }
     }

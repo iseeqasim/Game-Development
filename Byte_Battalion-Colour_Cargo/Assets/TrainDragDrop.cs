@@ -7,13 +7,13 @@ public class TrainDragDrop : MonoBehaviour
     private TrainDragDrop lastDroppedOnTrain; // Keep track of the last train this one was dropped on
 
     // Smoothing parameters
-    public float dragSmoothness = 10f;
+    public float dragSmoothness = 1f;
     public float snapTolerance = 0.1f;
 
     // Track positions
-    public float redTrackX = -19f;
-    public float blueTrackX = 4.78f;
-    public float greenTrackX = -7.5f;
+    public float redTrackX = 168.852f;
+    public float blueTrackX = 169.692f;
+    public float greenTrackX = 169.274f;
 
     private void OnMouseDown()
     {
@@ -35,7 +35,11 @@ public class TrainDragDrop : MonoBehaviour
 
             // Find the nearest track position and smooth the train movement to the new position.
             Vector3 targetPosition = FindNearestTrackPosition(mousePosition.x);
-            transform.position = Vector3.Lerp(transform.position, targetPosition, Time.deltaTime * dragSmoothness);
+
+            // Clamp the target position within the specified x-axis range
+            targetPosition.x = Mathf.Clamp(targetPosition.x, 168.85f, 169.69f);
+
+            transform.position = Vector3.Lerp(transform.position, targetPosition, Time.deltaTime * dragSmoothness * 40f);
 
         }
     }
