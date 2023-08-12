@@ -6,6 +6,11 @@ public class TrainDragDrop4 : MonoBehaviour
     private Vector3 initialPosition;
     private TrainDragDrop4 lastDroppedOnTrain; // Keep track of the last train this one was dropped on
 
+    public bool enableMouseDown = true; // Enable or disable OnMouseDown behavior
+    public bool enableMouseDrag = true; // Enable or disable OnMouseDrag behavior
+    public bool enableMouseUp = true;
+
+
     // Smoothing parameters
     public float dragSmoothness = 1f;
     public float snapTolerance = 0.1f;
@@ -18,6 +23,9 @@ public class TrainDragDrop4 : MonoBehaviour
 
     private void OnMouseDown()
     {
+        if (!enableMouseDown)
+            return;
+
         // When the mouse button is pressed down on the train, enable dragging.
         isDragging = true;
         initialPosition = transform.position;
@@ -25,6 +33,9 @@ public class TrainDragDrop4 : MonoBehaviour
 
     private void OnMouseDrag()
     {
+        if (!enableMouseDrag)
+            return;
+
         if (isDragging)
         {
             // Disable the collider during the drag
@@ -48,6 +59,9 @@ public class TrainDragDrop4 : MonoBehaviour
 
     private void OnMouseUp()
     {
+        if (!enableMouseUp)
+            return;
+
         GetComponent<Collider>().enabled = true;
         // When the mouse button is released, disable dragging.
         isDragging = false;

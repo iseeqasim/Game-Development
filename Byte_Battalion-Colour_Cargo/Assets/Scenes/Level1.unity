@@ -2314,6 +2314,7 @@ MonoBehaviour:
   additionalObject2: {fileID: 0}
   objectToDeactivate: {fileID: 1123804995}
   delayTime: 5
+  movementSpeed: 0.3
   cargoActivationSound: {fileID: 0}
   cargoDeactivationSound: {fileID: 0}
   TrainSound: {fileID: 0}
@@ -2335,6 +2336,9 @@ MonoBehaviour:
   redTrackX: 168.852
   blueTrackX: 169.692
   greenTrackX: 169.274
+  enableMouseDown: 0
+  enableMouseDrag: 0
+  enableMouseUp: 0
 --- !u!65 &517647767
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3013,6 +3017,9 @@ MonoBehaviour:
   redTrackX: 168.852
   blueTrackX: 169.692
   greenTrackX: 169.274
+  enableMouseDown: 0
+  enableMouseDrag: 0
+  enableMouseUp: 0
 --- !u!114 &706958831
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3038,6 +3045,7 @@ MonoBehaviour:
   additionalObject2: {fileID: 0}
   objectToDeactivate: {fileID: 0}
   delayTime: 12
+  movementSpeed: 0.3
   cargoActivationSound: {fileID: 0}
   cargoDeactivationSound: {fileID: 0}
   TrainSound: {fileID: 0}
@@ -4212,6 +4220,9 @@ MonoBehaviour:
   redTrackX: 168.852
   blueTrackX: 169.692
   greenTrackX: 169.274
+  enableMouseDown: 1
+  enableMouseDrag: 1
+  enableMouseUp: 1
 --- !u!114 &1312150269
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4237,6 +4248,7 @@ MonoBehaviour:
   additionalObject2: {fileID: 1602899081}
   objectToDeactivate: {fileID: 1123804995}
   delayTime: 12
+  movementSpeed: 0.3
   cargoActivationSound: {fileID: 1440943594}
   cargoDeactivationSound: {fileID: 1582790360}
   TrainSound: {fileID: 418810558}
@@ -4482,6 +4494,9 @@ MonoBehaviour:
   redTrackX: 168.852
   blueTrackX: 169.692
   greenTrackX: 169.274
+  enableMouseDown: 1
+  enableMouseDrag: 1
+  enableMouseUp: 1
 --- !u!114 &1438835787
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4507,6 +4522,7 @@ MonoBehaviour:
   additionalObject2: {fileID: 1602899081}
   objectToDeactivate: {fileID: 1123804995}
   delayTime: 12
+  movementSpeed: 0.3
   cargoActivationSound: {fileID: 1440943594}
   cargoDeactivationSound: {fileID: 1582790360}
   TrainSound: {fileID: 418810558}
@@ -4662,6 +4678,7 @@ MonoBehaviour:
   additionalObject2: {fileID: 0}
   objectToDeactivate: {fileID: 0}
   delayTime: 5
+  movementSpeed: 0.3
   cargoActivationSound: {fileID: 0}
   cargoDeactivationSound: {fileID: 0}
   TrainSound: {fileID: 0}
@@ -4683,6 +4700,9 @@ MonoBehaviour:
   redTrackX: 168.852
   blueTrackX: 169.692
   greenTrackX: 169.274
+  enableMouseDown: 0
+  enableMouseDrag: 0
+  enableMouseUp: 0
 --- !u!65 &1602899085
 BoxCollider:
   m_ObjectHideFlags: 0

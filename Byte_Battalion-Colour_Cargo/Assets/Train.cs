@@ -9,6 +9,7 @@ public class Train : MonoBehaviour
     public GameObject spawnerB;
     public GameObject additionalObject1; // Reference to the first additional GameObject to activate
     public GameObject additionalObject2;
+    public GameObject additionalObject3;
     public GameObject objectToDeactivate;
     private bool movementStarted = false;
     private bool additionalObjectsActivated = false; // Flag to track if additional objects are activated
@@ -84,6 +85,10 @@ public class Train : MonoBehaviour
                     if (additionalObject2 != null)
                     {
                         additionalObject2.SetActive(true);
+                    }
+                    if (additionalObject3 != null)
+                    {
+                        additionalObject3.SetActive(true);
                     }
                     additionalObjectsActivated = true; // Set the flag to prevent repeated activation
                 }

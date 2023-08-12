@@ -60,14 +60,14 @@
     <Compile Include="Assets\MainMenuLoad.cs" />
     <Compile Include="Assets\ExitScript.cs" />
     <Compile Include="Assets\Train.cs" />
+    <Compile Include="Assets\WinManager4.cs" />
     <Compile Include="Assets\LeaderboardScript.cs" />
+    <Compile Include="Assets\TrainDragDrop4.cs" />
+    <Compile Include="Assets\WinManager.cs" />
     <Compile Include="Assets\Bomb.cs" />
     <Compile Include="Assets\PlayScript.cs" />
     <Compile Include="Assets\CargoContainer.cs" />
     <Compile Include="Assets\Cargo.cs" />
-    <Compile Include="Assets\WinManager.cs" />
-    <Compile Include="Assets\TrainDragDrop4.cs" />
-    <Compile Include="Assets\WinManager4.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\___www.unityassetcollection.com___.txt" />

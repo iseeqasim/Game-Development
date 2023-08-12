@@ -926,6 +926,7 @@ MonoBehaviour:
   spawnerB: {fileID: 0}
   additionalObject1: {fileID: 0}
   additionalObject2: {fileID: 0}
+  additionalObject3: {fileID: 0}
   objectToDeactivate: {fileID: 0}
   delayTime: 12
   movementSpeed: 0.3
@@ -958,6 +959,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bc1f4d99b04a3141b91f7fcbd509e2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enableMouseDown: 0
+  enableMouseDrag: 0
+  enableMouseUp: 0
   dragSmoothness: 0.35
   snapTolerance: 0.1
   redTrackX: 168.852
@@ -2105,7 +2109,7 @@ MonoBehaviour:
   secondCubePrefab: {fileID: 828118327}
   minSpawnInterval: 6
   maxSpawnInterval: 8
-  startTimeForRandomSpawn: 20
+  startTimeForRandomSpawn: 15
 --- !u!4 &629602800
 Transform:
   m_ObjectHideFlags: 0
@@ -2114,7 +2118,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 629602798}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 168.852, y: 0.299, z: -8.91}
+  m_LocalPosition: {x: 168.852, y: 0.299, z: -9.19}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2362,9 +2366,10 @@ MonoBehaviour:
   - {fileID: 1650815834}
   - {fileID: 158638981}
   activateThreshold: 3
-  spawnerB: {fileID: 1733983709}
+  spawnerB: {fileID: 0}
   additionalObject1: {fileID: 844202474}
   additionalObject2: {fileID: 966177238}
+  additionalObject3: {fileID: 1733983709}
   objectToDeactivate: {fileID: 0}
   delayTime: 10
   movementSpeed: 0.5
@@ -2384,6 +2389,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bc1f4d99b04a3141b91f7fcbd509e2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enableMouseDown: 1
+  enableMouseDrag: 1
+  enableMouseUp: 1
   dragSmoothness: 0.35
   snapTolerance: 0.1
   redTrackX: 168.852
@@ -3029,6 +3037,7 @@ MonoBehaviour:
   spawnerB: {fileID: 0}
   additionalObject1: {fileID: 0}
   additionalObject2: {fileID: 0}
+  additionalObject3: {fileID: 0}
   objectToDeactivate: {fileID: 0}
   delayTime: 12
   movementSpeed: 0.3
@@ -3061,6 +3070,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bc1f4d99b04a3141b91f7fcbd509e2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enableMouseDown: 0
+  enableMouseDrag: 0
+  enableMouseUp: 0
   dragSmoothness: 0.35
   snapTolerance: 0.1
   redTrackX: 168.852
@@ -3100,7 +3112,7 @@ MonoBehaviour:
   secondCubePrefab: {fileID: 828118327}
   minSpawnInterval: 6
   maxSpawnInterval: 8
-  startTimeForRandomSpawn: 15
+  startTimeForRandomSpawn: 8
 --- !u!4 &857764728
 Transform:
   m_ObjectHideFlags: 0
@@ -3525,6 +3537,7 @@ MonoBehaviour:
   spawnerB: {fileID: 0}
   additionalObject1: {fileID: 0}
   additionalObject2: {fileID: 0}
+  additionalObject3: {fileID: 0}
   objectToDeactivate: {fileID: 0}
   delayTime: 12
   movementSpeed: 0.3
@@ -3557,6 +3570,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bc1f4d99b04a3141b91f7fcbd509e2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enableMouseDown: 0
+  enableMouseDrag: 0
+  enableMouseUp: 0
   dragSmoothness: 0.35
   snapTolerance: 0.1
   redTrackX: 168.852
@@ -4017,7 +4033,7 @@ MonoBehaviour:
   secondCubePrefab: {fileID: 828118327}
   minSpawnInterval: 6
   maxSpawnInterval: 8
-  startTimeForRandomSpawn: 10
+  startTimeForRandomSpawn: 22
 --- !u!4 &1123804997
 Transform:
   m_ObjectHideFlags: 0
@@ -4026,7 +4042,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1123804995}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 169.275, y: 0.299, z: -9.24}
+  m_LocalPosition: {x: 169.275, y: 0.299, z: -8.75}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4608,9 +4624,10 @@ MonoBehaviour:
   - {fileID: 388298999}
   - {fileID: 1761402730}
   activateThreshold: 3
-  spawnerB: {fileID: 1733983709}
+  spawnerB: {fileID: 0}
   additionalObject1: {fileID: 844202474}
   additionalObject2: {fileID: 966177238}
+  additionalObject3: {fileID: 1733983709}
   objectToDeactivate: {fileID: 0}
   delayTime: 10
   movementSpeed: 0.5
@@ -4630,6 +4647,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bc1f4d99b04a3141b91f7fcbd509e2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enableMouseDown: 1
+  enableMouseDrag: 1
+  enableMouseUp: 1
   dragSmoothness: 0.35
   snapTolerance: 0.1
   redTrackX: 168.852
@@ -4872,9 +4892,10 @@ MonoBehaviour:
   - {fileID: 688802346}
   - {fileID: 907655897}
   activateThreshold: 3
-  spawnerB: {fileID: 1733983709}
+  spawnerB: {fileID: 0}
   additionalObject1: {fileID: 844202474}
   additionalObject2: {fileID: 966177238}
+  additionalObject3: {fileID: 1733983709}
   objectToDeactivate: {fileID: 0}
   delayTime: 10
   movementSpeed: 0.5
@@ -4894,6 +4915,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bc1f4d99b04a3141b91f7fcbd509e2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enableMouseDown: 1
+  enableMouseDrag: 1
+  enableMouseUp: 1
   dragSmoothness: 0.35
   snapTolerance: 0.1
   redTrackX: 168.852
@@ -5486,6 +5510,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bc1f4d99b04a3141b91f7fcbd509e2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enableMouseDown: 0
+  enableMouseDrag: 0
+  enableMouseUp: 0
   dragSmoothness: 0.35
   snapTolerance: 0.1
   redTrackX: 168.852
@@ -5516,6 +5543,7 @@ MonoBehaviour:
   spawnerB: {fileID: 0}
   additionalObject1: {fileID: 0}
   additionalObject2: {fileID: 0}
+  additionalObject3: {fileID: 0}
   objectToDeactivate: {fileID: 0}
   delayTime: 12
   movementSpeed: 0.3
@@ -5534,8 +5562,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.04, y: 0.039, z: 0.17}
-  m_Center: {x: 0, y: 0.01, z: 0}
+  m_Size: {x: 0.04, y: 0.039, z: 0.047}
+  m_Center: {x: 0, y: 0.01, z: -0.04}
 --- !u!1001 &1760854615
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -15,8 +15,15 @@ public class TrainDragDrop : MonoBehaviour
     public float blueTrackX = 169.692f;
     public float greenTrackX = 169.274f;
 
+    public bool enableMouseDown = true; // Enable or disable OnMouseDown behavior
+    public bool enableMouseDrag = true; // Enable or disable OnMouseDrag behavior
+    public bool enableMouseUp = true;
+
     private void OnMouseDown()
     {
+        if (!enableMouseDown)
+            return;
+
         // When the mouse button is pressed down on the train, enable dragging.
         isDragging = true;
         initialPosition = transform.position;
@@ -24,6 +31,9 @@ public class TrainDragDrop : MonoBehaviour
 
     private void OnMouseDrag()
     {
+        if (!enableMouseDrag)
+            return;
+
         if (isDragging)
         {
             // Disable the collider during the drag
@@ -47,6 +57,9 @@ public class TrainDragDrop : MonoBehaviour
 
     private void OnMouseUp()
     {
+        if (!enableMouseUp)
+            return;
+
         GetComponent<Collider>().enabled = true;
         // When the mouse button is released, disable dragging.
         isDragging = false;
