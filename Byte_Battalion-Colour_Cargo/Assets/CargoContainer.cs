@@ -4,7 +4,10 @@ public class CargoContainer : MonoBehaviour
 {
     public enum CargoColor { Red, Blue, Yellow }
 
-    public CargoColor color;
+    public bool enableRed = true;
+    public bool enableBlue = true;
+    public bool enableYellow = true;
+
     public string customHexRed = "#FF3217"; // Custom hex color for Red
     public string customHexBlue = "#0000FF"; // Custom hex color for Blue
     public string customHexYellow = "#FFFF00"; // Custom hex color for Yellow
@@ -15,13 +18,44 @@ public class CargoContainer : MonoBehaviour
 
     public float moveSpeed = 5f; // Adjust this to control the speed of the cargo containers
 
+    private CargoColor color;
+
     private void Start()
     {
-        // Randomly assign a color to the cargo container
-        color = (CargoColor)Random.Range(0, 3);
+        // Randomly assign a color to the cargo container based on enabled colors
+        SetRandomColorBasedOnEnabled();
 
         // Set the cube's color based on the cargo color
         SetColorBasedOnCargo();
+    }
+
+    private void SetRandomColorBasedOnEnabled()
+    {
+        bool[] enabledColors = { enableRed, enableBlue, enableYellow };
+        int enabledCount = 0;
+        foreach (bool enabled in enabledColors)
+        {
+            if (enabled)
+            {
+                enabledCount++;
+            }
+        }
+
+        int randomIndex = Random.Range(0, enabledCount);
+
+        int currentIndex = 0;
+        for (int i = 0; i < enabledColors.Length; i++)
+        {
+            if (enabledColors[i])
+            {
+                if (currentIndex == randomIndex)
+                {
+                    color = (CargoColor)i;
+                    break;
+                }
+                currentIndex++;
+            }
+        }
     }
 
     private void SetColorBasedOnCargo()
@@ -48,14 +82,13 @@ public class CargoContainer : MonoBehaviour
                     material.color = yellowColor;
                     material.SetColor("_EmissionColor", customEmissionYellow);
                     break;
-                    // Add more cases for other colors if needed
             }
         }
 
         cubeRenderer.materials = materials; // Update the materials array
     }
 
-private void Update()
+    private void Update()
     {
         // Move the cargo container vertically along the tracks
         transform.Translate(Vector3.back * moveSpeed * Time.deltaTime);
@@ -74,19 +107,19 @@ private void Update()
             switch (color)
             {
                 case CargoColor.Red:
-                    if (trainName == "Red")
+                    if (enableRed && trainName == "Red")
                     {
                         train.ActivateNextCargo();
                     }
                     break;
                 case CargoColor.Blue:
-                    if (trainName == "Blue")
+                    if (enableBlue && trainName == "Blue")
                     {
                         train.ActivateNextCargo();
                     }
                     break;
                 case CargoColor.Yellow:
-                    if (trainName == "Yellow")
+                    if (enableYellow && trainName == "Yellow")
                     {
                         train.ActivateNextCargo();
                     }

@@ -56,38 +56,22 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Fantastic City Generator\Scripts\RunTimeSample.cs" />
     <Compile Include="Assets\TrainDragDrop.cs" />
     <Compile Include="Assets\MainMenuLoad.cs" />
     <Compile Include="Assets\ExitScript.cs" />
-    <Compile Include="Assets\Fantastic City Generator\Scripts\CityGenerator.cs" />
     <Compile Include="Assets\Train.cs" />
-    <Compile Include="Assets\Fantastic City Generator\Scripts\FreeCamera.cs" />
-    <Compile Include="Assets\Fantastic City Generator\Water\WaterSample.cs" />
-    <Compile Include="Assets\Fantastic City Generator\Scripts\TrafficSystem.cs" />
     <Compile Include="Assets\LeaderboardScript.cs" />
-    <Compile Include="Assets\Fantastic City Generator\Scripts\TrafficLight.cs" />
-    <Compile Include="Assets\Fantastic City Generator\Traffic System\DataSpawn.cs" />
-    <Compile Include="Assets\Fantastic City Generator\Player\Player Mobile\MobileControl.cs" />
-    <Compile Include="Assets\Fantastic City Generator\Player\Player\CharacterControl.cs" />
-    <Compile Include="Assets\Fantastic City Generator\Scripts\Fps.cs" />
+    <Compile Include="Assets\Bomb.cs" />
     <Compile Include="Assets\PlayScript.cs" />
-    <Compile Include="Assets\Fantastic City Generator\Scripts\Mesh_CombineUtility.cs" />
-    <Compile Include="Assets\Fantastic City Generator\Scripts\TFShiftHand2.cs" />
     <Compile Include="Assets\CargoContainer.cs" />
-    <Compile Include="Assets\Fantastic City Generator\WayTool\FCGWaypointsContainer.cs" />
-    <Compile Include="Assets\Fantastic City Generator\Scripts\TrafficLights2.cs" />
     <Compile Include="Assets\Cargo.cs" />
-    <Compile Include="Assets\Fantastic City Generator\Scripts\MeshSize.cs" />
-    <Compile Include="Assets\Fantastic City Generator\Scripts\TrafficCar.cs" />
+    <Compile Include="Assets\WinManager.cs" />
+    <Compile Include="Assets\TrainDragDrop4.cs" />
+    <Compile Include="Assets\WinManager4.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\___www.unityassetcollection.com___.txt" />
-    <None Include="Assets\Fantastic City Generator\Shaders\DiffuseAlpha.shader" />
-    <None Include="Assets\Fantastic City Generator\Shaders\TransparentRef.shader" />
     <None Include="Assets\TGU Skybox Pack\Readme.txt" />
-    <None Include="Assets\Fantastic City Generator\Shaders\Splat.shader" />
-    <None Include="Assets\Fantastic City Generator\Water\FXWaterBasic.shader" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
