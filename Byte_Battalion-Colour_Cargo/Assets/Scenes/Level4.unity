@@ -968,6 +968,8 @@ MonoBehaviour:
   blueTrackX: 169.692
   greenTrackX: 169.274
   yellowTrackX: 170.1
+  yIncreaseDuringDrag: 0.1737
+  zDecreaseDuringDrag: 0.297
 --- !u!1001 &225097260
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2371,7 +2373,7 @@ MonoBehaviour:
   additionalObject2: {fileID: 966177238}
   additionalObject3: {fileID: 1733983709}
   objectToDeactivate: {fileID: 0}
-  delayTime: 10
+  delayTime: 5
   movementSpeed: 0.5
   cargoActivationSound: {fileID: 1998237027}
   cargoDeactivationSound: {fileID: 1192049319}
@@ -2398,6 +2400,8 @@ MonoBehaviour:
   blueTrackX: 169.692
   greenTrackX: 169.274
   yellowTrackX: 170.1
+  yIncreaseDuringDrag: 0.2337
+  zDecreaseDuringDrag: 0.233
 --- !u!1 &739507974 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 472f751baf9bd5b4f8b0e0b90162a900, type: 3}
@@ -2519,7 +2523,7 @@ MonoBehaviour:
   customEmissionRed: {r: 0.5294118, g: 0, b: 0, a: 0}
   customEmissionBlue: {r: 0, g: 0.07058824, b: 0.40392157, a: 0}
   customEmissionYellow: {r: 0.6784314, g: 0.28627452, b: 0, a: 1}
-  moveSpeed: 0.3
+  moveSpeed: 0.33
 --- !u!54 &792220129
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3079,6 +3083,8 @@ MonoBehaviour:
   blueTrackX: 169.692
   greenTrackX: 169.274
   yellowTrackX: 170.1
+  yIncreaseDuringDrag: 0.1737
+  zDecreaseDuringDrag: 0.297
 --- !u!1 &857764726
 GameObject:
   m_ObjectHideFlags: 0
@@ -3579,6 +3585,8 @@ MonoBehaviour:
   blueTrackX: 169.692
   greenTrackX: 169.274
   yellowTrackX: 170.1
+  yIncreaseDuringDrag: 0.1737
+  zDecreaseDuringDrag: 0.297
 --- !u!1 &976256440 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 472f751baf9bd5b4f8b0e0b90162a900, type: 3}
@@ -3605,7 +3613,7 @@ MonoBehaviour:
   customEmissionRed: {r: 0.5294118, g: 0, b: 0, a: 0}
   customEmissionBlue: {r: 0, g: 0.07058824, b: 0.40392157, a: 0}
   customEmissionYellow: {r: 0.6784314, g: 0.28627452, b: 0, a: 1}
-  moveSpeed: 0.3
+  moveSpeed: 0.33
 --- !u!65 &976256442
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4629,7 +4637,7 @@ MonoBehaviour:
   additionalObject2: {fileID: 966177238}
   additionalObject3: {fileID: 1733983709}
   objectToDeactivate: {fileID: 0}
-  delayTime: 10
+  delayTime: 5
   movementSpeed: 0.5
   cargoActivationSound: {fileID: 1998237027}
   cargoDeactivationSound: {fileID: 1192049319}
@@ -4656,6 +4664,8 @@ MonoBehaviour:
   blueTrackX: 169.692
   greenTrackX: 169.274
   yellowTrackX: 170.1
+  yIncreaseDuringDrag: 0.2337
+  zDecreaseDuringDrag: 0.233
 --- !u!1001 &1374058537
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4897,7 +4907,7 @@ MonoBehaviour:
   additionalObject2: {fileID: 966177238}
   additionalObject3: {fileID: 1733983709}
   objectToDeactivate: {fileID: 0}
-  delayTime: 10
+  delayTime: 5
   movementSpeed: 0.5
   cargoActivationSound: {fileID: 1998237027}
   cargoDeactivationSound: {fileID: 1192049319}
@@ -4924,6 +4934,8 @@ MonoBehaviour:
   blueTrackX: 169.692
   greenTrackX: 169.274
   yellowTrackX: 170.1
+  yIncreaseDuringDrag: 0.2337
+  zDecreaseDuringDrag: 0.233
 --- !u!1 &1491995730 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 472f751baf9bd5b4f8b0e0b90162a900, type: 3}
@@ -5519,6 +5531,8 @@ MonoBehaviour:
   blueTrackX: 169.692
   greenTrackX: 169.274
   yellowTrackX: 170.1
+  yIncreaseDuringDrag: 0.1737
+  zDecreaseDuringDrag: 0.297
 --- !u!114 &1733983712
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5974,7 +5988,7 @@ MonoBehaviour:
   customEmissionRed: {r: 0.5294118, g: 0, b: 0, a: 0}
   customEmissionBlue: {r: 0, g: 0.07058824, b: 0.40392157, a: 0}
   customEmissionYellow: {r: 0.6784314, g: 0.28627452, b: 0, a: 1}
-  moveSpeed: 0.3
+  moveSpeed: 0.33
 --- !u!65 &1852622841
 BoxCollider:
   m_ObjectHideFlags: 0

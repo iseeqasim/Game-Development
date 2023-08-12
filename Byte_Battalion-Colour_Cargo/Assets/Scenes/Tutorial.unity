@@ -2473,6 +2473,7 @@ MonoBehaviour:
   spawnerB: {fileID: 629602798}
   additionalObject1: {fileID: 703749368}
   additionalObject2: {fileID: 0}
+  additionalObject3: {fileID: 0}
   objectToDeactivate: {fileID: 1123804995}
   delayTime: 5
   movementSpeed: 0.3
@@ -2500,6 +2501,8 @@ MonoBehaviour:
   enableMouseDown: 0
   enableMouseDrag: 0
   enableMouseUp: 0
+  yIncreaseDuringDrag: 0.2337
+  zDecreaseDuringDrag: 0.233
 --- !u!65 &517647767
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3173,6 +3176,7 @@ MonoBehaviour:
   spawnerB: {fileID: 0}
   additionalObject1: {fileID: 0}
   additionalObject2: {fileID: 0}
+  additionalObject3: {fileID: 0}
   objectToDeactivate: {fileID: 0}
   delayTime: 5
   movementSpeed: 0.3
@@ -3200,6 +3204,8 @@ MonoBehaviour:
   enableMouseDown: 0
   enableMouseDrag: 0
   enableMouseUp: 0
+  yIncreaseDuringDrag: 0.2337
+  zDecreaseDuringDrag: 0.233
 --- !u!65 &703749371
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3355,6 +3361,8 @@ MonoBehaviour:
   enableMouseDown: 1
   enableMouseDrag: 1
   enableMouseUp: 1
+  yIncreaseDuringDrag: 0.2337
+  zDecreaseDuringDrag: 0.233
 --- !u!114 &706958831
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3378,8 +3386,9 @@ MonoBehaviour:
   spawnerB: {fileID: 629602798}
   additionalObject1: {fileID: 703749368}
   additionalObject2: {fileID: 517647764}
+  additionalObject3: {fileID: 0}
   objectToDeactivate: {fileID: 1123804995}
-  delayTime: 10
+  delayTime: 9
   movementSpeed: 0.3
   cargoActivationSound: {fileID: 1440943594}
   cargoDeactivationSound: {fileID: 1582790360}
@@ -4784,6 +4793,8 @@ MonoBehaviour:
   enableMouseDown: 0
   enableMouseDrag: 0
   enableMouseUp: 0
+  yIncreaseDuringDrag: 0.2337
+  zDecreaseDuringDrag: 0.233
 --- !u!114 &1312150269
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4807,6 +4818,7 @@ MonoBehaviour:
   spawnerB: {fileID: 0}
   additionalObject1: {fileID: 0}
   additionalObject2: {fileID: 0}
+  additionalObject3: {fileID: 0}
   objectToDeactivate: {fileID: 0}
   delayTime: 5
   movementSpeed: 0.3
@@ -4960,6 +4972,8 @@ MonoBehaviour:
   enableMouseDown: 1
   enableMouseDrag: 1
   enableMouseUp: 1
+  yIncreaseDuringDrag: 0.2337
+  zDecreaseDuringDrag: 0.233
 --- !u!114 &1438835787
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4983,8 +4997,9 @@ MonoBehaviour:
   spawnerB: {fileID: 629602798}
   additionalObject1: {fileID: 703749368}
   additionalObject2: {fileID: 517647764}
+  additionalObject3: {fileID: 0}
   objectToDeactivate: {fileID: 1123804995}
-  delayTime: 10
+  delayTime: 9
   movementSpeed: 0.3
   cargoActivationSound: {fileID: 1440943594}
   cargoDeactivationSound: {fileID: 1582790360}

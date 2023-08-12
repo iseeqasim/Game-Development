@@ -19,6 +19,9 @@ public class TrainDragDrop : MonoBehaviour
     public bool enableMouseDrag = true; // Enable or disable OnMouseDrag behavior
     public bool enableMouseUp = true;
 
+    public float yIncreaseDuringDrag = 0.2337f; // Y position increase during drag
+    public float zDecreaseDuringDrag = 0.233f;
+
     private void OnMouseDown()
     {
         if (!enableMouseDown)
@@ -45,6 +48,9 @@ public class TrainDragDrop : MonoBehaviour
 
             // Find the nearest track position and smooth the train movement to the new position.
             Vector3 targetPosition = FindNearestTrackPosition(mousePosition.x);
+
+            targetPosition.y += yIncreaseDuringDrag;
+            targetPosition.z += zDecreaseDuringDrag;
 
             // Clamp the target position within the specified x-axis range
             targetPosition.x = Mathf.Clamp(targetPosition.x, 168.85f, 169.69f);
