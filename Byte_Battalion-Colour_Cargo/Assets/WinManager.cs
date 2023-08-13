@@ -14,7 +14,13 @@ public class WinManager : MonoBehaviour
     private bool secondObjectStartedMoving = false;
     private bool delayStarted = false;
 
+    public GameObject levelWinPanel;
+
     // Update is called once per frame
+    void Start()
+    {
+        levelWinPanel.SetActive(false);
+    }
     void Update()
     {
         // Check if the first moving object has started moving
@@ -44,6 +50,7 @@ public class WinManager : MonoBehaviour
         yield return new WaitForSeconds(delayTime);
 
         // Load the "MainMenu" scene
-        SceneManager.LoadScene("MainMenu");
+        levelWinPanel.SetActive(true);
+        
     }
 }

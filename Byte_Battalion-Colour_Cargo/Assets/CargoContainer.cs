@@ -20,9 +20,11 @@ public class CargoContainer : MonoBehaviour
 
     private CargoColor color;
 
+    public GameObject gameoverpanel;
     private void Start()
     {
         // Randomly assign a color to the cargo container based on enabled colors
+        gameoverpanel.SetActive(false);
         SetRandomColorBasedOnEnabled();
 
         // Set the cube's color based on the cargo color
@@ -136,5 +138,7 @@ public class CargoContainer : MonoBehaviour
 
         // Destroy the cube after the collision
         Destroy(gameObject);
+        Time.timeScale = 0;
+        gameoverpanel.SetActive(true);
     }
 }
