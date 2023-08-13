@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.27741933, g: 0.30216175, b: 0.31727678, a: 1}
+  m_IndirectSpecularColor: {r: 0.11073318, g: 0.13034621, b: 0.1520965, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2839,6 +2839,7 @@ MonoBehaviour:
   customEmissionBlue: {r: 0, g: 0.07058824, b: 0.40392157, a: 0}
   customEmissionYellow: {r: 0.6784314, g: 0.28627452, b: 0, a: 1}
   moveSpeed: 0.3
+  gameoverpanel: {fileID: 0}
 --- !u!54 &792220129
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3700,6 +3701,7 @@ MonoBehaviour:
   customEmissionBlue: {r: 0, g: 0.07058824, b: 0.40392157, a: 0}
   customEmissionYellow: {r: 0.6784314, g: 0.28627452, b: 0, a: 1}
   moveSpeed: 0.3
+  gameoverpanel: {fileID: 0}
 --- !u!65 &976256442
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5772,6 +5774,7 @@ MonoBehaviour:
   customEmissionBlue: {r: 0, g: 0.07058824, b: 0.40392157, a: 0}
   customEmissionYellow: {r: 0.6784314, g: 0.28627452, b: 0, a: 1}
   moveSpeed: 0.3
+  gameoverpanel: {fileID: 0}
 --- !u!65 &1852622841
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6324,7 +6327,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4502732639844775383, guid: fd1b816d519f7e4499117f812229cd8b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.02
       objectReference: {fileID: 0}
     - target: {fileID: 4502732639844775383, guid: fd1b816d519f7e4499117f812229cd8b, type: 3}
       propertyPath: m_LocalPosition.z

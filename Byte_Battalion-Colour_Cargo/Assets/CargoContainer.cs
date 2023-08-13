@@ -18,17 +18,20 @@ public class CargoContainer : MonoBehaviour
 
     public float moveSpeed = 5f; // Adjust this to control the speed of the cargo containers
 
+
     private CargoColor color;
 
     public GameObject gameoverpanel;
+
     private void Start()
     {
         // Randomly assign a color to the cargo container based on enabled colors
-        gameoverpanel.SetActive(false);
         SetRandomColorBasedOnEnabled();
 
         // Set the cube's color based on the cargo color
         SetColorBasedOnCargo();
+
+        gameoverpanel.SetActive(false);
     }
 
     private void SetRandomColorBasedOnEnabled()
@@ -104,8 +107,10 @@ public class CargoContainer : MonoBehaviour
             // Get the name of the collided train
             string trainName = collision.gameObject.name;
 
-            // Check the color of the cube and call ActivateNextCargo on the corresponding train
+            // Get a reference to the Train script
             Train train = collision.gameObject.GetComponent<Train>();
+
+            // Check the color of the cube and call ActivateNextCargo on the corresponding train
             switch (color)
             {
                 case CargoColor.Red:
@@ -128,17 +133,25 @@ public class CargoContainer : MonoBehaviour
                     break;
             }
 
-            // If the color of the cube does not match the color of the train,
-            // call the method in the train to deactivate one cargo container
+            // Check if the color of the cube does not match the color of the train
             if (train.trainColor != color)
             {
-                train.DeactivateOneCargo();
+                // Check if the train has cargo
+                if (train.GetNextAvailableCargoIndex() == 0)
+                {
+                    Time.timeScale = 0;
+                    gameoverpanel.SetActive(true);
+                }
+                else
+                {
+                    train.DeactivateOneCargo();
+                }
             }
         }
 
         // Destroy the cube after the collision
         Destroy(gameObject);
-        Time.timeScale = 0;
-        gameoverpanel.SetActive(true);
     }
+
 }
+

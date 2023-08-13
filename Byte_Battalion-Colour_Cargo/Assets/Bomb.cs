@@ -5,6 +5,7 @@ using UnityEngine;
 public class Bomb : MonoBehaviour
 {
     public float moveSpeed = 5f;
+    public GameObject gameoverpanel; // Reference to the gameover panel
 
     private void Update()
     {
@@ -20,8 +21,19 @@ public class Bomb : MonoBehaviour
             Train train = collision.gameObject.GetComponent<Train>();
             if (train != null)
             {
+                // Get the number of available cargos in the train
+                int availableCargos = train.GetNextAvailableCargoIndex();
+
                 // Call the Deactivatetwocargos function in the Train class
                 train.Deactivatetwocargos();
+
+                // Check if the train has one or zero cargo
+                if (availableCargos <= 1)
+                {
+                    // Set the gameover panel active
+                    Time.timeScale = 0;
+                    gameoverpanel.SetActive(true);
+                }
             }
 
             // Destroy the bomb after collision with a train

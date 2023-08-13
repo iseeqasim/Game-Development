@@ -96,6 +96,11 @@ public class Train : MonoBehaviour
         }
     }
 
+    public int GetNextAvailableCargoIndex()
+    {
+        return nextAvailableCargoIndex;
+    }
+
     public bool IsMovementStarted()
     {
         return movementStarted;
