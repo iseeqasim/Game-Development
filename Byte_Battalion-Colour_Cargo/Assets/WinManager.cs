@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class WinManager : MonoBehaviour
 {
@@ -15,6 +16,10 @@ public class WinManager : MonoBehaviour
     private bool delayStarted = false;
 
     public GameObject levelWinPanel;
+
+    private float bestTime=Mathf.Infinity;
+    public Text guiText;
+    public Text guiText2;
 
     // Update is called once per frame
     void Start()
@@ -50,7 +55,20 @@ public class WinManager : MonoBehaviour
         yield return new WaitForSeconds(delayTime);
 
         // Load the "MainMenu" scene
-        levelWinPanel.SetActive(true);
         
+        // Calculate the current level completion time
+        float currentTime = float.Parse(guiText.text);
+        float bestTime = PlayerPrefs.GetFloat("BestTime", Mathf.Infinity);
+
+        // Compare with the best time
+        if (currentTime < bestTime)
+        {
+            bestTime = currentTime;
+            PlayerPrefs.SetFloat("BestTime", bestTime); // Save the best time
+
+            // Load the "MainMenu" scene
+            
+        }
+        levelWinPanel.SetActive(true);
     }
 }
