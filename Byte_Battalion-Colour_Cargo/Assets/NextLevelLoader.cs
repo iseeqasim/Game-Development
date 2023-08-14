@@ -44,10 +44,6 @@ public class NextLevelLoader : MonoBehaviour
         }
 
 
-
-
-
-
         SceneManager.LoadScene(nextLevel);
     }
 }

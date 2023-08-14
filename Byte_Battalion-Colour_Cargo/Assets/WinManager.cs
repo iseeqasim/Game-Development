@@ -9,6 +9,8 @@ public class WinManager : MonoBehaviour
     public GameObject firstMovingObject; // Reference to the first moving object
     public GameObject secondMovingObject; // Reference to the second moving object
 
+    public AudioSource newBackgroundMusic;
+
     public float delayTime = 2f; // Delay time in seconds
 
     private bool firstObjectStartedMoving = false;
@@ -69,6 +71,26 @@ public class WinManager : MonoBehaviour
             // Load the "MainMenu" scene
             
         }
+
+        AudioSource previousBackgroundMusic = GameObject.FindGameObjectWithTag("BGM").GetComponent<AudioSource>();
+        if (previousBackgroundMusic != null)
+        {
+            previousBackgroundMusic.Stop();
+        }
+
+        AudioSource bgm2 = GameObject.FindGameObjectWithTag("BGM2").GetComponent<AudioSource>();
+        if (bgm2 != null)
+        {
+            bgm2.Stop();
+        }
+
+
+        // Play the new background music
+        if (newBackgroundMusic != null)
+        {
+            newBackgroundMusic.Play();
+        }
+
         levelWinPanel.SetActive(true);
     }
 }

@@ -7,6 +7,10 @@ public class Bomb : MonoBehaviour
     public float moveSpeed = 5f;
     public GameObject gameoverpanel; // Reference to the gameover panel
 
+    public AudioSource newBackgroundMusic;
+    public GameObject explosionParticlePrefab;
+
+
     private void Update()
     {
         // Move the bomb vertically along the tracks
@@ -32,11 +36,29 @@ public class Bomb : MonoBehaviour
                 {
                     // Set the gameover panel active
                     Time.timeScale = 0;
+
+                    AudioSource previousBackgroundMusic = GameObject.FindGameObjectWithTag("BGM").GetComponent<AudioSource>();
+                    if (previousBackgroundMusic != null)
+                    {
+                        previousBackgroundMusic.Stop();
+                    }
+
+                    // Play the new background music
+                    if (newBackgroundMusic != null)
+                    {
+                        newBackgroundMusic.Play();
+                    }
+
+
                     gameoverpanel.SetActive(true);
                 }
             }
 
             // Destroy the bomb after collision with a train
+            if (explosionParticlePrefab != null)
+            {
+                Instantiate(explosionParticlePrefab, transform.position, Quaternion.identity);
+            }
             Destroy(gameObject);
         }
     }

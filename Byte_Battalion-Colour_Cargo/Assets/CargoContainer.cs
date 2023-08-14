@@ -16,6 +16,8 @@ public class CargoContainer : MonoBehaviour
     public Color customEmissionBlue = new Color(0f, 0f, 1f); // Custom emission color for Blue (R=0, G=0, B=1)
     public Color customEmissionYellow = new Color(1f, 1f, 0f); // Custom emission color for Yellow (R=1, G=1, B=0)
 
+    public AudioSource newBackgroundMusic;
+
     public float moveSpeed = 5f; // Adjust this to control the speed of the cargo containers
 
 
@@ -140,6 +142,18 @@ public class CargoContainer : MonoBehaviour
                 if (train.GetNextAvailableCargoIndex() == 0)
                 {
                     Time.timeScale = 0;
+                    AudioSource previousBackgroundMusic = GameObject.FindGameObjectWithTag("BGM").GetComponent<AudioSource>();
+                    if (previousBackgroundMusic != null)
+                    {
+                        previousBackgroundMusic.Stop();
+                    }
+
+                    // Play the new background music
+                    if (newBackgroundMusic != null)
+                    {
+                        newBackgroundMusic.Play();
+                    }
+
                     gameoverpanel.SetActive(true);
                 }
                 else

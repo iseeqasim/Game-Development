@@ -17,9 +17,12 @@ public class Train : MonoBehaviour
     public float delayTime = 5f;
     public float movementSpeed = 0.3f;
 
+    public GameObject objectToActivate;
+
 
     public AudioSource cargoActivationSound;
     public AudioSource cargoDeactivationSound;
+    public AudioSource cargoBDeactivationSound;
     public AudioSource TrainSound;
     public AudioSource HornSound;
 
@@ -52,6 +55,11 @@ public class Train : MonoBehaviour
                 if (TrainSound != null)
                 {
                     TrainSound.Play();
+                }
+
+                if (objectToActivate != null)
+                {
+                    objectToActivate.SetActive(true);
                 }
             }
             // Move the train forward
@@ -185,9 +193,9 @@ public class Train : MonoBehaviour
             colliderCenter.z += 0.035f * containersToDeactivate;
             boxCollider.center = colliderCenter;
 
-            if (cargoDeactivationSound != null)
+            if (cargoBDeactivationSound != null)
             {
-                cargoDeactivationSound.Play();
+                cargoBDeactivationSound.Play();
             }
         }
     }

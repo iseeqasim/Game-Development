@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Train
+  - BGM
+  - BGM2
+  - BGM3
   layers:
   - Default
   - TransparentFX

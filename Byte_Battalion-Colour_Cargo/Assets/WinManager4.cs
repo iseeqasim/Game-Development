@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class WinManager4 : MonoBehaviour
 {
@@ -11,11 +12,25 @@ public class WinManager4 : MonoBehaviour
 
     public float delayTime = 2f; // Delay time in seconds
 
+    public AudioSource newBackgroundMusic;
+
+    public GameObject levelWinPanel;
+
+    private float bestTime = Mathf.Infinity;
+    public Text guiText;
+    public Text guiText2;
+
     private bool firstObjectStartedMoving = false;
     private bool secondObjectStartedMoving = false;
     private bool thirdObjectStartedMoving = false;
 
     private bool delayStarted = false;
+
+    void Start()
+    {
+        levelWinPanel.SetActive(false);
+    }
+
 
     // Update is called once per frame
     void Update()
@@ -53,6 +68,40 @@ public class WinManager4 : MonoBehaviour
         yield return new WaitForSeconds(delayTime);
 
         // Load the "MainMenu" scene
-        SceneManager.LoadScene("MainMenu");
+
+        // Calculate the current level completion time
+        float currentTime = float.Parse(guiText.text);
+        float bestTime = PlayerPrefs.GetFloat("BestTime", Mathf.Infinity);
+
+        // Compare with the best time
+        if (currentTime < bestTime)
+        {
+            bestTime = currentTime;
+            PlayerPrefs.SetFloat("BestTime", bestTime); // Save the best time
+
+            // Load the "MainMenu" scene
+
+        }
+
+        AudioSource previousBackgroundMusic = GameObject.FindGameObjectWithTag("BGM").GetComponent<AudioSource>();
+        if (previousBackgroundMusic != null)
+        {
+            previousBackgroundMusic.Stop();
+        }
+
+        AudioSource bgm2 = GameObject.FindGameObjectWithTag("BGM2").GetComponent<AudioSource>();
+        if (bgm2 != null)
+        {
+            bgm2.Stop();
+        }
+
+
+        // Play the new background music
+        if (newBackgroundMusic != null)
+        {
+            newBackgroundMusic.Play();
+        }
+
+        levelWinPanel.SetActive(true);
     }
 }
