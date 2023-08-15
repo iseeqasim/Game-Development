@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.21510062, g: 0.23528284, b: 0.24974625, a: 1}
+  m_IndirectSpecularColor: {r: 0.21514224, g: 0.23529583, b: 0.24969333, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1836,6 +1836,14 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: MainMenu
       objectReference: {fileID: 0}
+    - target: {fileID: 7366836055285546496, guid: 1999e8bf820aff54692f7dade2e847b3, type: 3}
+      propertyPath: m_Text
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7366836055285546498, guid: 1999e8bf820aff54692f7dade2e847b3, type: 3}
+      propertyPath: winM4
+      value: 
+      objectReference: {fileID: 990532302}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1999e8bf820aff54692f7dade2e847b3, type: 3}
 --- !u!1 &341578990 stripped
@@ -4351,6 +4359,7 @@ MonoBehaviour:
   levelWinPanel: {fileID: 341578993}
   guiText: {fileID: 341578995}
   guiText2: {fileID: 341578994}
+  timestop: 0
 --- !u!1001 &1026519180
 PrefabInstance:
   m_ObjectHideFlags: 0
