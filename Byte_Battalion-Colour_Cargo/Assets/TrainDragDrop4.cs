@@ -13,7 +13,7 @@ public class TrainDragDrop4 : MonoBehaviour
 
     // Smoothing parameters
     public float dragSmoothness = 1f;
-    public float snapTolerance = 0.1f;
+    public float snapTolerance = 0f;
 
     // Track positions
     public float redTrackX = 168.852f;
@@ -59,7 +59,7 @@ public class TrainDragDrop4 : MonoBehaviour
             // Clamp the target position within the specified x-axis range
             targetPosition.x = Mathf.Clamp(targetPosition.x, 168.85f, 170.11f);
 
-            transform.position = Vector3.Lerp(transform.position, targetPosition, Time.deltaTime * dragSmoothness * 40f);
+            transform.position = Vector3.Lerp(transform.position, targetPosition, Time.deltaTime * dragSmoothness * 42f);
 
         }
     }

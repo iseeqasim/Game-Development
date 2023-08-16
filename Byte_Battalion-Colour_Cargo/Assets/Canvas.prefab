@@ -3134,6 +3134,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   guiText: {fileID: 7366836055285546496}
   guiText2: {fileID: 7366836053912082799}
+  nextLevel: 
+  winM: {fileID: 0}
+  winM4: {fileID: 0}
 --- !u!1 &7366836055462340409
 GameObject:
   m_ObjectHideFlags: 0

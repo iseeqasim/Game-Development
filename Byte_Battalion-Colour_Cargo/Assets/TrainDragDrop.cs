@@ -22,6 +22,8 @@ public class TrainDragDrop : MonoBehaviour
     public float yIncreaseDuringDrag = 0.2337f; // Y position increase during drag
     public float zDecreaseDuringDrag = 0.233f;
 
+
+
     private void OnMouseDown()
     {
         if (!enableMouseDown)
@@ -42,6 +44,9 @@ public class TrainDragDrop : MonoBehaviour
             // Disable the collider during the drag
             GetComponent<Collider>().enabled = false;
 
+
+
+
             // Get the mouse position in world coordinates.
             Vector3 mousePosition = Camera.main.ScreenToWorldPoint(
                 new Vector3(Input.mousePosition.x, Input.mousePosition.y, -Camera.main.transform.position.z));
@@ -55,11 +60,12 @@ public class TrainDragDrop : MonoBehaviour
             // Clamp the target position within the specified x-axis range
             targetPosition.x = Mathf.Clamp(targetPosition.x, 168.85f, 169.69f);
 
+
+
             transform.position = Vector3.Lerp(transform.position, targetPosition, Time.deltaTime * dragSmoothness * 40f);
 
         }
     }
-
 
     private void OnMouseUp()
     {

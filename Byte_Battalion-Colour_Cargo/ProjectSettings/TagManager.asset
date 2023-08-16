@@ -8,6 +8,10 @@ TagManager:
   - BGM
   - BGM2
   - BGM3
+  - Track
+  - TrackR
+  - TrackL
+  - TrackRR
   layers:
   - Default
   - TransparentFX

@@ -8,7 +8,7 @@ public class Bomb : MonoBehaviour
     public GameObject gameoverpanel; // Reference to the gameover panel
 
     public AudioSource newBackgroundMusic;
-    public GameObject explosionParticlePrefab;
+
 
 
     private void Update()
@@ -55,10 +55,6 @@ public class Bomb : MonoBehaviour
             }
 
             // Destroy the bomb after collision with a train
-            if (explosionParticlePrefab != null)
-            {
-                Instantiate(explosionParticlePrefab, transform.position, Quaternion.identity);
-            }
             Destroy(gameObject);
         }
     }

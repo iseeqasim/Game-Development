@@ -18,7 +18,10 @@ public class CargoContainer : MonoBehaviour
 
     public AudioSource newBackgroundMusic;
 
-    public float moveSpeed = 5f; // Adjust this to control the speed of the cargo containers
+
+    public float minMoveSpeed = 3f; // Minimum move speed for cargo containers
+    public float maxMoveSpeed = 7f;
+    private float currentMoveSpeed;
 
 
     private CargoColor color;
@@ -32,6 +35,9 @@ public class CargoContainer : MonoBehaviour
 
         // Set the cube's color based on the cargo color
         SetColorBasedOnCargo();
+
+        // Set the initial move speed randomly within the specified range
+        currentMoveSpeed = Random.Range(minMoveSpeed, maxMoveSpeed);
 
         gameoverpanel.SetActive(false);
     }
@@ -98,7 +104,7 @@ public class CargoContainer : MonoBehaviour
     private void Update()
     {
         // Move the cargo container vertically along the tracks
-        transform.Translate(Vector3.back * moveSpeed * Time.deltaTime);
+        transform.Translate(Vector3.back * currentMoveSpeed * Time.deltaTime);
     }
 
     private void OnCollisionEnter(Collision collision)

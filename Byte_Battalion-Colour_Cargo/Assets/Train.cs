@@ -26,7 +26,25 @@ public class Train : MonoBehaviour
     public AudioSource TrainSound;
     public AudioSource HornSound;
 
+    public ParticleSystem cargoDeactivationParticlePrefab;
+    public GameObject explosionParticlePrefab;
+
     private int nextAvailableCargoIndex = 0;
+
+    public TrackM trackScript;
+    public TrackM trackScriptR;
+    public TrackM trackScriptL;
+    public TrackM trackScriptRR;
+
+    public TrackL LtrackScript;
+    public TrackL LtrackScriptR;
+    public TrackL LtrackScriptL;
+    public TrackL LtrackScriptRR;
+
+    public TrackRR RRtrackScript;
+    public TrackRR RRtrackScriptR;
+    public TrackRR RRtrackScriptL;
+    public TrackRR RRtrackScriptRR;
 
     private void Start()
     {
@@ -37,8 +55,265 @@ public class Train : MonoBehaviour
         }
     }
 
+
+    
+
+
     private void Update()
     {
+        // Raycasting from the train's position
+        Ray ray = new Ray(transform.position, Vector3.forward);
+        RaycastHit hit;
+
+        if (trackScript != null)
+        {
+            if (Physics.Raycast(ray, out hit))
+            {
+                // Check if the ray hit a track object
+                if (hit.transform.CompareTag("Track"))
+                {
+                    trackScript.SetRaycastHit(true); // Call the SetRaycastHit method in the Track script
+                }
+                else
+                {
+                    trackScript.SetRaycastHit(false);
+                }
+            }
+            else
+            {
+                trackScript.SetRaycastHit(false);
+
+            }
+        }
+
+        if (trackScriptR != null)
+        {
+            if (Physics.Raycast(ray, out hit))
+            {
+                // Check if the ray hit a track object
+                if (hit.transform.CompareTag("TrackR"))
+                {
+                    trackScriptR.SetRaycastHit(true); // Call the SetRaycastHit method in the Track script
+                }
+                else
+                {
+                    trackScriptR.SetRaycastHit(false);
+                }
+            }
+            else
+            {
+                trackScriptR.SetRaycastHit(false);
+            }
+        }
+
+        if (trackScriptL != null)
+        {
+            if (Physics.Raycast(ray, out hit))
+            {
+                // Check if the ray hit a track object
+                if (hit.transform.CompareTag("TrackL"))
+                {
+                    trackScriptL.SetRaycastHit(true); // Call the SetRaycastHit method in the Track script
+                }
+                else
+                {
+                    trackScriptL.SetRaycastHit(false);
+                }
+            }
+            else
+            {
+                trackScriptL.SetRaycastHit(false);
+            }
+        }
+
+        if (trackScriptRR != null)
+        {
+            if (Physics.Raycast(ray, out hit))
+            {
+                // Check if the ray hit a track object
+                if (hit.transform.CompareTag("TrackRR"))
+                {
+                    trackScriptRR.SetRaycastHit(true); // Call the SetRaycastHit method in the Track script
+                }
+                else
+                {
+                    trackScriptRR.SetRaycastHit(false);
+                }
+            }
+            else
+            {
+                trackScriptRR.SetRaycastHit(false);
+            }
+        }
+
+
+        if (LtrackScript != null)
+        {
+            if (Physics.Raycast(ray, out hit))
+            {
+                // Check if the ray hit a track object
+                if (hit.transform.CompareTag("Track"))
+                {
+                    LtrackScript.SetRaycastHitL(true); // Call the SetRaycastHit method in the Track script
+                }
+                else
+                {
+                    LtrackScript.SetRaycastHitL(false);
+                }
+            }
+            else
+            {
+                LtrackScript.SetRaycastHitL(false);
+
+            }
+        }
+
+        if (LtrackScriptR != null)
+        {
+            if (Physics.Raycast(ray, out hit))
+            {
+                // Check if the ray hit a track object
+                if (hit.transform.CompareTag("TrackR"))
+                {
+                    LtrackScriptR.SetRaycastHitL(true); // Call the SetRaycastHit method in the Track script
+                }
+                else
+                {
+                    LtrackScriptR.SetRaycastHitL(false);
+                }
+            }
+            else
+            {
+                LtrackScriptR.SetRaycastHitL(false);
+            }
+        }
+
+        if (LtrackScriptL != null)
+        {
+            if (Physics.Raycast(ray, out hit))
+            {
+                // Check if the ray hit a track object
+                if (hit.transform.CompareTag("TrackL"))
+                {
+                    LtrackScriptL.SetRaycastHitL(true); // Call the SetRaycastHit method in the Track script
+                }
+                else
+                {
+                    LtrackScriptL.SetRaycastHitL(false);
+                }
+            }
+            else
+            {
+                LtrackScriptL.SetRaycastHitL(false);
+            }
+        }
+
+        if (LtrackScriptRR != null)
+        {
+            if (Physics.Raycast(ray, out hit))
+            {
+                // Check if the ray hit a track object
+                if (hit.transform.CompareTag("TrackRR"))
+                {
+                    LtrackScriptRR.SetRaycastHitL(true); // Call the SetRaycastHit method in the Track script
+                }
+                else
+                {
+                    LtrackScriptRR.SetRaycastHitL(false);
+                }
+            }
+            else
+            {
+                LtrackScriptRR.SetRaycastHitL(false);
+            }
+        }
+
+
+
+
+        if (RRtrackScript != null)
+        {
+            if (Physics.Raycast(ray, out hit))
+            {
+                // Check if the ray hit a track object
+                if (hit.transform.CompareTag("Track"))
+                {
+                    RRtrackScript.SetRaycastHitR(true); // Call the SetRaycastHit method in the Track script
+                }
+                else
+                {
+                    RRtrackScript.SetRaycastHitR(false);
+                }
+            }
+            else
+            {
+                RRtrackScript.SetRaycastHitR(false);
+
+            }
+        }
+
+        if (RRtrackScriptR != null)
+        {
+            if (Physics.Raycast(ray, out hit))
+            {
+                // Check if the ray hit a track object
+                if (hit.transform.CompareTag("TrackR"))
+                {
+                    RRtrackScriptR.SetRaycastHitR(true); // Call the SetRaycastHit method in the Track script
+                }
+                else
+                {
+                    RRtrackScriptR.SetRaycastHitR(false);
+                }
+            }
+            else
+            {
+                RRtrackScriptR.SetRaycastHitR(false);
+            }
+        }
+
+        if (RRtrackScriptL != null)
+        {
+            if (Physics.Raycast(ray, out hit))
+            {
+                // Check if the ray hit a track object
+                if (hit.transform.CompareTag("TrackL"))
+                {
+                    RRtrackScriptL.SetRaycastHitR(true); // Call the SetRaycastHit method in the Track script
+                }
+                else
+                {
+                    RRtrackScriptL.SetRaycastHitR(false);
+                }
+            }
+            else
+            {
+                RRtrackScriptL.SetRaycastHitR(false);
+            }
+        }
+
+        if (RRtrackScriptRR != null)
+        {
+            if (Physics.Raycast(ray, out hit))
+            {
+                // Check if the ray hit a track object
+                if (hit.transform.CompareTag("TrackRR"))
+                {
+                    RRtrackScriptRR.SetRaycastHitR(true); // Call the SetRaycastHit method in the Track script
+                }
+                else
+                {
+                    RRtrackScriptRR.SetRaycastHitR(false);
+                }
+            }
+            else
+            {
+                RRtrackScriptRR.SetRaycastHitR(false);
+            }
+        }
+
+
+
         // Check if the activation threshold is reached
         if (nextAvailableCargoIndex >= activateThreshold)
         {
@@ -165,6 +440,13 @@ public class Train : MonoBehaviour
             {
                 cargoDeactivationSound.Play();
             }
+
+            // Instantiate the cargo deactivation particle effect at the deactivated cargo's position
+            if (cargoDeactivationParticlePrefab != null)
+            {
+                Instantiate(cargoDeactivationParticlePrefab, cargoContainers[nextAvailableCargoIndex].transform.position, Quaternion.identity);
+            }
+
         }
     }
 
@@ -197,6 +479,12 @@ public class Train : MonoBehaviour
             {
                 cargoBDeactivationSound.Play();
             }
+
+            if (explosionParticlePrefab != null)
+            {
+                Instantiate(explosionParticlePrefab, cargoContainers[nextAvailableCargoIndex].transform.position, Quaternion.identity);
+            }
+
         }
     }
 
