@@ -24,7 +24,7 @@ public class Countup : MonoBehaviour
             float bestTime = PlayerPrefs.GetFloat("BestTimeTutorial", Mathf.Infinity);
             if (bestTime == Mathf.Infinity)
             {
-                guiText2.text = "NA";
+                guiText2.text = "-";
             }
             else
             {
@@ -36,7 +36,7 @@ public class Countup : MonoBehaviour
             float bestTime = PlayerPrefs.GetFloat("BestTimeLevel1", Mathf.Infinity);
             if (bestTime == Mathf.Infinity)
             {
-                guiText2.text = "NA";
+                guiText2.text = "-";
             }
             else
             {
@@ -48,7 +48,7 @@ public class Countup : MonoBehaviour
             float bestTime = PlayerPrefs.GetFloat("BestTimeLevel2", Mathf.Infinity);
             if (bestTime == Mathf.Infinity)
             {
-                guiText2.text = "NA";
+                guiText2.text = "-";
             }
             else
             {
@@ -60,7 +60,7 @@ public class Countup : MonoBehaviour
             float bestTime = PlayerPrefs.GetFloat("BestTimeLevel3", Mathf.Infinity);
             if (bestTime == Mathf.Infinity)
             {
-                guiText2.text = "NA";
+                guiText2.text = "-";
             }
             else
             {
@@ -72,7 +72,7 @@ public class Countup : MonoBehaviour
             float bestTime = PlayerPrefs.GetFloat("BestTimeLevel4", Mathf.Infinity);
             if (bestTime == Mathf.Infinity)
             {
-                guiText2.text = "NA";
+                guiText2.text = "-";
             }
             else
             {
@@ -84,7 +84,7 @@ public class Countup : MonoBehaviour
             float bestTime = PlayerPrefs.GetFloat("BestTimeLevel5", Mathf.Infinity);
             if (bestTime == Mathf.Infinity)
             {
-                guiText2.text = "NA";
+                guiText2.text = "-";
             }
             else
             {

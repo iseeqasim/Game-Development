@@ -28,6 +28,9 @@ public class Train : MonoBehaviour
 
     public ParticleSystem cargoDeactivationParticlePrefab;
     public GameObject explosionParticlePrefab;
+    public ParticleSystem cargoActivationParticlePrefab;
+
+
 
     private int nextAvailableCargoIndex = 0;
 
@@ -413,6 +416,15 @@ public class Train : MonoBehaviour
             {
                 cargoActivationSound.Play();
             }
+
+            if (cargoActivationParticlePrefab != null)
+            {
+                Vector3 particlePosition = cargoContainers[nextAvailableCargoIndex].transform.position;
+                particlePosition.z -= 0.62f; // Decrease the Z component
+                Instantiate(cargoActivationParticlePrefab, particlePosition, Quaternion.identity);
+            }
+
+
         }
     }
 
