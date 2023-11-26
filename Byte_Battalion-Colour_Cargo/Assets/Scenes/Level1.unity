@@ -2800,6 +2800,10 @@ MonoBehaviour:
   LtrackScriptR: {fileID: 0}
   LtrackScriptL: {fileID: 0}
   LtrackScriptRR: {fileID: 0}
+  LLtrackScript: {fileID: 0}
+  LLtrackScriptR: {fileID: 0}
+  LLtrackScriptL: {fileID: 0}
+  LLtrackScriptRR: {fileID: 0}
   RRtrackScript: {fileID: 0}
   RRtrackScriptR: {fileID: 0}
   RRtrackScriptL: {fileID: 0}
@@ -2838,7 +2842,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.04, y: 0.039, z: 0.047}
-  m_Center: {x: 0, y: 0.01, z: -0.04}
+  m_Center: {x: 0, y: 0, z: -0.04}
 --- !u!4 &517647768 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2604937036283183741, guid: e3dea1c50cc0df045855a4c1c6fb044f, type: 3}
@@ -3280,8 +3284,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cubePrefab: {fileID: 1852622839}
   secondCubePrefab: {fileID: 0}
-  minSpawnInterval: 7
-  maxSpawnInterval: 8
+  minSpawnInterval: 3
+  maxSpawnInterval: 5
   startTimeForRandomSpawn: 500
 --- !u!4 &629602800
 Transform:
@@ -3624,7 +3628,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.04, y: 0.039, z: 0.17}
-  m_Center: {x: 0, y: 0.01, z: 0}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &706958830
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3691,6 +3695,10 @@ MonoBehaviour:
   LtrackScriptR: {fileID: 0}
   LtrackScriptL: {fileID: 0}
   LtrackScriptRR: {fileID: 0}
+  LLtrackScript: {fileID: 0}
+  LLtrackScriptR: {fileID: 0}
+  LLtrackScriptL: {fileID: 0}
+  LLtrackScriptRR: {fileID: 0}
   RRtrackScript: {fileID: 0}
   RRtrackScriptR: {fileID: 0}
   RRtrackScriptL: {fileID: 0}
@@ -3820,15 +3828,18 @@ MonoBehaviour:
   enableRed: 0
   enableBlue: 1
   enableYellow: 1
+  enableGreen: 0
   customHexRed: '#FF3217'
   customHexBlue: '#70E2FF'
   customHexYellow: '#FDCF00'
+  customHexGreen: '#00B406'
   customEmissionRed: {r: 0.5294118, g: 0, b: 0, a: 0}
   customEmissionBlue: {r: 0, g: 0.07058824, b: 0.40392157, a: 0}
   customEmissionYellow: {r: 0.6784314, g: 0.28627452, b: 0, a: 1}
+  customEmissionGreen: {r: 10, g: 130, b: 0, a: 1}
   newBackgroundMusic: {fileID: 651056873}
-  minMoveSpeed: 0.3
-  maxMoveSpeed: 0.55
+  minMoveSpeed: 0.5
+  maxMoveSpeed: 0.7
   gameoverpanel: {fileID: 1627613219}
 --- !u!54 &792220129
 Rigidbody:
@@ -4076,8 +4087,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cubePrefab: {fileID: 976256440}
   secondCubePrefab: {fileID: 0}
-  minSpawnInterval: 7
-  maxSpawnInterval: 8
+  minSpawnInterval: 3
+  maxSpawnInterval: 5
   startTimeForRandomSpawn: 500
 --- !u!4 &857764728
 Transform:
@@ -4421,15 +4432,18 @@ MonoBehaviour:
   enableRed: 0
   enableBlue: 1
   enableYellow: 1
+  enableGreen: 0
   customHexRed: '#FF3217'
   customHexBlue: '#70E2FF'
   customHexYellow: '#FDCF00'
+  customHexGreen: '#00B406'
   customEmissionRed: {r: 0.5294118, g: 0, b: 0, a: 0}
   customEmissionBlue: {r: 0, g: 0.07058824, b: 0.40392157, a: 0}
   customEmissionYellow: {r: 0.6784314, g: 0.28627452, b: 0, a: 1}
+  customEmissionGreen: {r: 10, g: 130, b: 0, a: 1}
   newBackgroundMusic: {fileID: 651056873}
-  minMoveSpeed: 0.3
-  maxMoveSpeed: 0.55
+  minMoveSpeed: 0.5
+  maxMoveSpeed: 0.7
   gameoverpanel: {fileID: 1627613219}
 --- !u!65 &976256442
 BoxCollider:
@@ -4906,8 +4920,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cubePrefab: {fileID: 976256440}
   secondCubePrefab: {fileID: 0}
-  minSpawnInterval: 7
-  maxSpawnInterval: 8
+  minSpawnInterval: 3
+  maxSpawnInterval: 5
   startTimeForRandomSpawn: 500
 --- !u!4 &1123804997
 Transform:
@@ -4917,7 +4931,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1123804995}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 169.275, y: 0.299, z: -8.989}
+  m_LocalPosition: {x: 169.274, y: 0.299, z: -8.989}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5213,6 +5227,10 @@ MonoBehaviour:
   LtrackScriptR: {fileID: 250548256}
   LtrackScriptL: {fileID: 2022961795}
   LtrackScriptRR: {fileID: 0}
+  LLtrackScript: {fileID: 0}
+  LLtrackScriptR: {fileID: 0}
+  LLtrackScriptL: {fileID: 0}
+  LLtrackScriptRR: {fileID: 0}
   RRtrackScript: {fileID: 0}
   RRtrackScriptR: {fileID: 0}
   RRtrackScriptL: {fileID: 0}
@@ -5555,6 +5573,10 @@ MonoBehaviour:
   LtrackScriptR: {fileID: 0}
   LtrackScriptL: {fileID: 0}
   LtrackScriptRR: {fileID: 0}
+  LLtrackScript: {fileID: 0}
+  LLtrackScriptR: {fileID: 0}
+  LLtrackScriptL: {fileID: 0}
+  LLtrackScriptRR: {fileID: 0}
   RRtrackScript: {fileID: 0}
   RRtrackScriptR: {fileID: 0}
   RRtrackScriptL: {fileID: 0}
@@ -5779,6 +5801,10 @@ MonoBehaviour:
   LtrackScriptR: {fileID: 0}
   LtrackScriptL: {fileID: 0}
   LtrackScriptRR: {fileID: 0}
+  LLtrackScript: {fileID: 0}
+  LLtrackScriptR: {fileID: 0}
+  LLtrackScriptL: {fileID: 0}
+  LLtrackScriptRR: {fileID: 0}
   RRtrackScript: {fileID: 0}
   RRtrackScriptR: {fileID: 0}
   RRtrackScriptL: {fileID: 0}
@@ -5817,7 +5843,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.04, y: 0.039, z: 0.047}
-  m_Center: {x: 0, y: 0.01, z: -0.04}
+  m_Center: {x: 0, y: 0, z: -0.04}
 --- !u!1001 &1605281484
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5918,6 +5944,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7366836053578488782, guid: 1999e8bf820aff54692f7dade2e847b3, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 895
+      objectReference: {fileID: 0}
+    - target: {fileID: 7366836053578488783, guid: 1999e8bf820aff54692f7dade2e847b3, type: 3}
+      propertyPath: m_Color.b
+      value: 0.41568628
+      objectReference: {fileID: 0}
+    - target: {fileID: 7366836053578488783, guid: 1999e8bf820aff54692f7dade2e847b3, type: 3}
+      propertyPath: m_Color.r
+      value: 0.4117647
+      objectReference: {fileID: 0}
+    - target: {fileID: 7366836053578488783, guid: 1999e8bf820aff54692f7dade2e847b3, type: 3}
+      propertyPath: m_Texture
+      value: 
+      objectReference: {fileID: 2800000, guid: 6f0bdd1e76f460e4db39d588c216016a, type: 3}
     - target: {fileID: 7366836053746629725, guid: 1999e8bf820aff54692f7dade2e847b3, type: 3}
       propertyPath: m_Text
       value: 4 Cargos, Each Train
@@ -6654,15 +6696,18 @@ MonoBehaviour:
   enableRed: 0
   enableBlue: 1
   enableYellow: 1
+  enableGreen: 0
   customHexRed: '#FF3217'
   customHexBlue: '#70E2FF'
   customHexYellow: '#FDCF00'
+  customHexGreen: '#00B406'
   customEmissionRed: {r: 0.5294118, g: 0, b: 0, a: 0}
   customEmissionBlue: {r: 0, g: 0.07058824, b: 0.40392157, a: 0}
   customEmissionYellow: {r: 0.6784314, g: 0.28627452, b: 0, a: 1}
+  customEmissionGreen: {r: 10, g: 130, b: 0, a: 1}
   newBackgroundMusic: {fileID: 651056873}
-  minMoveSpeed: 0.3
-  maxMoveSpeed: 0.55
+  minMoveSpeed: 0.5
+  maxMoveSpeed: 0.7
   gameoverpanel: {fileID: 1627613219}
 --- !u!65 &1852622841
 BoxCollider:

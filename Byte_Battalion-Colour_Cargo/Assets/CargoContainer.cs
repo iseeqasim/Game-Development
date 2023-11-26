@@ -2,19 +2,23 @@ using UnityEngine;
 
 public class CargoContainer : MonoBehaviour
 {
-    public enum CargoColor { Red, Blue, Yellow }
+    public enum CargoColor { Red, Blue, Yellow, Green}
 
     public bool enableRed = true;
     public bool enableBlue = true;
     public bool enableYellow = true;
+    public bool enableGreen = true;
 
     public string customHexRed = "#FF3217"; // Custom hex color for Red
     public string customHexBlue = "#0000FF"; // Custom hex color for Blue
     public string customHexYellow = "#FFFF00"; // Custom hex color for Yellow
+    public string customHexGreen = "#00B406"; // Custom hex color for Yellow
 
     public Color customEmissionRed = new Color(135f, 0f, 0f); // Custom emission color for Red (R=1, G=0, B=0)
     public Color customEmissionBlue = new Color(0f, 0f, 1f); // Custom emission color for Blue (R=0, G=0, B=1)
     public Color customEmissionYellow = new Color(1f, 1f, 0f); // Custom emission color for Yellow (R=1, G=1, B=0)
+    public Color customEmissionGreen = new Color(10f, 130f, 0f); // Custom emission color for Yellow (R=1, G=1, B=0)
+
 
     public AudioSource newBackgroundMusic;
 
@@ -44,7 +48,7 @@ public class CargoContainer : MonoBehaviour
 
     private void SetRandomColorBasedOnEnabled()
     {
-        bool[] enabledColors = { enableRed, enableBlue, enableYellow };
+        bool[] enabledColors = { enableRed, enableBlue, enableYellow, enableGreen };
         int enabledCount = 0;
         foreach (bool enabled in enabledColors)
         {
@@ -95,6 +99,11 @@ public class CargoContainer : MonoBehaviour
                     material.color = yellowColor;
                     material.SetColor("_EmissionColor", customEmissionYellow);
                     break;
+                case CargoColor.Green:
+                    ColorUtility.TryParseHtmlString(customHexGreen, out Color greenColor);
+                    material.color = greenColor;
+                    material.SetColor("_EmissionColor", customEmissionGreen);
+                    break;
             }
         }
 
@@ -139,6 +148,12 @@ public class CargoContainer : MonoBehaviour
                         train.ActivateNextCargo();
                     }
                     break;
+                case CargoColor.Green:
+                    if (enableGreen && trainName == "Green")
+                    {
+                        train.ActivateNextCargo();
+                    }
+                    break;
             }
 
             // Check if the color of the cube does not match the color of the train
@@ -152,6 +167,18 @@ public class CargoContainer : MonoBehaviour
                     if (previousBackgroundMusic != null)
                     {
                         previousBackgroundMusic.Stop();
+                    }
+
+                    AudioSource bgm2 = GameObject.FindGameObjectWithTag("BGM2").GetComponent<AudioSource>();
+                    if (bgm2 != null)
+                    {
+                        bgm2.Stop();
+                    }
+
+                    AudioSource bgm3 = GameObject.FindGameObjectWithTag("BGM3").GetComponent<AudioSource>();
+                    if (bgm3 != null)
+                    {
+                        bgm3.Stop();
                     }
 
                     // Play the new background music

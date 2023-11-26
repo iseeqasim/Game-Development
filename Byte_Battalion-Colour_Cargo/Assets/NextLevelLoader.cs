@@ -40,6 +40,10 @@ public class NextLevelLoader : MonoBehaviour
         }
         else if (nextLevel == "Level5")
         {
+            nextLevel = "Level6";
+        }
+        else if (nextLevel == "Level6")
+        {
             nextLevel = "MainMenu";
         }
 

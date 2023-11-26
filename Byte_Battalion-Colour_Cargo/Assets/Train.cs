@@ -44,6 +44,11 @@ public class Train : MonoBehaviour
     public TrackL LtrackScriptL;
     public TrackL LtrackScriptRR;
 
+    public TrackLL LLtrackScript;
+    public TrackLL LLtrackScriptR;
+    public TrackLL LLtrackScriptL;
+    public TrackLL LLtrackScriptRR;
+
     public TrackRR RRtrackScript;
     public TrackRR RRtrackScriptR;
     public TrackRR RRtrackScriptL;
@@ -314,6 +319,94 @@ public class Train : MonoBehaviour
                 RRtrackScriptRR.SetRaycastHitR(false);
             }
         }
+
+
+
+
+        if (LLtrackScript != null)
+        {
+            if (Physics.Raycast(ray, out hit))
+            {
+                // Check if the ray hit a track object
+                if (hit.transform.CompareTag("Track"))
+                {
+                    LLtrackScript.SetRaycastHitLL(true); // Call the SetRaycastHit method in the Track script
+                }
+                else
+                {
+                    LLtrackScript.SetRaycastHitLL(false);
+                }
+            }
+            else
+            {
+                LLtrackScript.SetRaycastHitLL(false);
+
+            }
+        }
+
+        if (LLtrackScriptR != null)
+        {
+            if (Physics.Raycast(ray, out hit))
+            {
+                // Check if the ray hit a track object
+                if (hit.transform.CompareTag("TrackR"))
+                {
+                    LLtrackScriptR.SetRaycastHitLL(true); // Call the SetRaycastHit method in the Track script
+                }
+                else
+                {
+                    LLtrackScriptR.SetRaycastHitLL(false);
+                }
+            }
+            else
+            {
+                LLtrackScriptR.SetRaycastHitLL(false);
+            }
+        }
+
+        if (LLtrackScriptL != null)
+        {
+            if (Physics.Raycast(ray, out hit))
+            {
+                // Check if the ray hit a track object
+                if (hit.transform.CompareTag("TrackL"))
+                {
+                    LLtrackScriptL.SetRaycastHitLL(true); // Call the SetRaycastHit method in the Track script
+                }
+                else
+                {
+                    LLtrackScriptL.SetRaycastHitLL(false);
+                }
+            }
+            else
+            {
+                LLtrackScriptL.SetRaycastHitLL(false);
+            }
+        }
+
+        if (LLtrackScriptRR != null)
+        {
+            if (Physics.Raycast(ray, out hit))
+            {
+                // Check if the ray hit a track object
+                if (hit.transform.CompareTag("TrackRR"))
+                {
+                    LLtrackScriptRR.SetRaycastHitLL(true); // Call the SetRaycastHit method in the Track script
+                }
+                else
+                {
+                    LLtrackScriptRR.SetRaycastHitLL(false);
+                }
+            }
+            else
+            {
+                LLtrackScriptRR.SetRaycastHitLL(false);
+            }
+        }
+
+
+
+
 
 
 

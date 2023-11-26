@@ -6,7 +6,6 @@ public class Bomb : MonoBehaviour
 {
     public float moveSpeed = 5f;
     public GameObject gameoverpanel; // Reference to the gameover panel
-
     public AudioSource newBackgroundMusic;
 
 
@@ -41,6 +40,19 @@ public class Bomb : MonoBehaviour
                     if (previousBackgroundMusic != null)
                     {
                         previousBackgroundMusic.Stop();
+                    }
+
+
+                    AudioSource bgm2 = GameObject.FindGameObjectWithTag("BGM2").GetComponent<AudioSource>();
+                    if (bgm2 != null)
+                    {
+                        bgm2.Stop();
+                    }
+
+                    AudioSource bgm3 = GameObject.FindGameObjectWithTag("BGM3").GetComponent<AudioSource>();
+                    if (bgm3 != null)
+                    {
+                        bgm3.Stop();
                     }
 
                     // Play the new background music

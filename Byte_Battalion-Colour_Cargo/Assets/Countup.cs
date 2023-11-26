@@ -12,9 +12,10 @@ public class Countup : MonoBehaviour
     public string nextLevel;
     public WinManager winM;
     public WinManager4 winM4;
+    public WinManager5 winM5;
 
-    
-    
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -91,14 +92,35 @@ public class Countup : MonoBehaviour
                 guiText2.text = bestTime.ToString();
             }
         }
-        
-        
+        else if (nextLevel == "Level6")
+        {
+            float bestTime = PlayerPrefs.GetFloat("BestTimeLevel6", Mathf.Infinity);
+            if (bestTime == Mathf.Infinity)
+            {
+                guiText2.text = "-";
+            }
+            else
+            {
+                guiText2.text = bestTime.ToString();
+            }
+        }
+
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (nextLevel == "Level4" || nextLevel == "Level5")
+        if (nextLevel == "Level6")
+        {
+            if (!winM5.timestop)
+            {
+                Timer += Time.deltaTime;
+                int seconds = ((int)Timer);
+                guiText.text = "" + seconds;
+            }
+        }
+        else if (nextLevel == "Level4" || nextLevel == "Level5")
         {
             if (!winM4.timestop)
             {
@@ -107,7 +129,8 @@ public class Countup : MonoBehaviour
                 guiText.text = "" + seconds;
             }
         }
-        else if (!winM.timestop) {
+        else if (!winM.timestop)
+        {
             Timer += Time.deltaTime;
             int seconds = ((int)Timer);
             guiText.text = "" + seconds;

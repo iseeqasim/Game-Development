@@ -10,6 +10,7 @@ public class Cargo : MonoBehaviour
     public float startTimeForRandomSpawn = 30f; // Time after which random spawn starts
 
     private bool isRandomSpawnEnabled = false;
+    private bool shouldSpawnSecondCube = false;
 
     private void Start()
     {
@@ -26,29 +27,38 @@ public class Cargo : MonoBehaviour
         }
     }
 
-    private void SpawnCube()
+    private void SpawnCube(GameObject prefab)
     {
-        GameObject prefabToSpawn;
-
-        if (isRandomSpawnEnabled && Random.value < 0.4f)
-        {
-            prefabToSpawn = secondCubePrefab;
-        }
-        else
-        {
-            prefabToSpawn = cubePrefab;
-        }
-
         // Instantiate a new cube at the spawner's position
-        GameObject newCube = Instantiate(prefabToSpawn, transform.position, Quaternion.identity);
+        GameObject newCube = Instantiate(prefab, transform.position, Quaternion.identity);
     }
 
     private IEnumerator SpawnCubes()
     {
         while (true)
         {
-            // Spawn a new cube
-            SpawnCube();
+            // Determine which cube prefab to spawn
+            GameObject prefabToSpawn;
+            if (isRandomSpawnEnabled)
+            {
+                if (shouldSpawnSecondCube)
+                {
+                    prefabToSpawn = secondCubePrefab;
+                    shouldSpawnSecondCube = false;
+                }
+                else
+                {
+                    prefabToSpawn = cubePrefab;
+                    shouldSpawnSecondCube = Random.value < 0.5f; // Decide whether to spawn secondCubePrefab
+                }
+            }
+            else
+            {
+                prefabToSpawn = cubePrefab;
+            }
+
+            // Spawn the determined cube prefab
+            SpawnCube(prefabToSpawn);
 
             // Randomize the spawn interval between minSpawnInterval and maxSpawnInterval
             float randomInterval = Random.Range(minSpawnInterval, maxSpawnInterval);

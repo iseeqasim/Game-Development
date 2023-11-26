@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.DefaultCompany.Byte_BrigadeColour_Cargo"
+    package="com.DefaultCompany.Byte_BattalionColour_Cargo"
     android:installLocation="preferExternal"
     android:versionCode="1"
     android:versionName="0.1" >

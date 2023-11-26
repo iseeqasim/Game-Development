@@ -158,6 +158,12 @@ public class WinManager : MonoBehaviour
             bgm2.Stop();
         }
 
+        AudioSource bgm3 = GameObject.FindGameObjectWithTag("BGM3").GetComponent<AudioSource>();
+        if (bgm3 != null)
+        {
+            bgm3.Stop();
+        }
+
 
         // Play the new background music
         if (newBackgroundMusic != null)

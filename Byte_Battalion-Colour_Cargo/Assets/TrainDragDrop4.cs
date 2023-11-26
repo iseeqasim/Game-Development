@@ -59,7 +59,7 @@ public class TrainDragDrop4 : MonoBehaviour
             // Clamp the target position within the specified x-axis range
             targetPosition.x = Mathf.Clamp(targetPosition.x, 168.85f, 170.11f);
 
-            transform.position = Vector3.Lerp(transform.position, targetPosition, Time.deltaTime * dragSmoothness * 42f);
+            transform.position = Vector3.Lerp(transform.position, targetPosition, Time.deltaTime * dragSmoothness * 40f);
 
         }
     }

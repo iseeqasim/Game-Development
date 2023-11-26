@@ -60,10 +60,12 @@
     <Compile Include="Assets\MainMenuLoad.cs" />
     <Compile Include="Assets\ExitScript.cs" />
     <Compile Include="Assets\Train.cs" />
+    <Compile Include="Assets\Check.cs" />
     <Compile Include="Assets\_HospitalInc\ThirdParty\Polygon Arsenal 2\Scripts\PolygonLightFade.cs" />
     <Compile Include="Assets\_HospitalInc\ThirdParty\Polygon Arsenal 2\Demo\Scripts\PolygonFireProjectile.cs" />
     <Compile Include="Assets\TrackL.cs" />
     <Compile Include="Assets\WinManager4.cs" />
+    <Compile Include="Assets\TrackLL.cs" />
     <Compile Include="Assets\LeaderboardScript.cs" />
     <Compile Include="Assets\TrackRR.cs" />
     <Compile Include="Assets\_HospitalInc\ThirdParty\Polygon Arsenal 2\Scripts\PolygonSoundSpawn.cs" />
@@ -75,11 +77,13 @@
     <Compile Include="Assets\TrainDragDrop4.cs" />
     <Compile Include="Assets\WinManager.cs" />
     <Compile Include="Assets\Countup.cs" />
+    <Compile Include="Assets\Respawn.cs" />
     <Compile Include="Assets\Bomb.cs" />
     <Compile Include="Assets\TrackM.cs" />
     <Compile Include="Assets\PlayScript.cs" />
     <Compile Include="Assets\_HospitalInc\ThirdParty\Polygon Arsenal 2\Demo\Scripts\PolygonLoopScript.cs" />
     <Compile Include="Assets\_HospitalInc\ThirdParty\Polygon Arsenal 2\Demo\Scripts\PolygonSceneSelect.cs" />
+    <Compile Include="Assets\WinManager5.cs" />
     <Compile Include="Assets\CargoContainer.cs" />
     <Compile Include="Assets\_HospitalInc\ThirdParty\Polygon Arsenal 2\Demo\Scripts\PolygonButtonScript.cs" />
     <Compile Include="Assets\Cargo.cs" />
@@ -716,8 +720,14 @@
     <Reference Include="Unity.VisualScripting.Flow.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Recorder.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.Recorder.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VSCode.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Recorder.Base">
+      <HintPath>Library\ScriptAssemblies\Unity.Recorder.Base.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Shared.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>
@@ -778,6 +788,9 @@
     </Reference>
     <Reference Include="Unity.VisualScripting.Core">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Recorder">
+      <HintPath>Library\ScriptAssemblies\Unity.Recorder.dll</HintPath>
     </Reference>
     <Reference Include="Unity.EditorCoroutines.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll</HintPath>

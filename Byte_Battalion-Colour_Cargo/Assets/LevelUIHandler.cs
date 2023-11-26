@@ -18,7 +18,7 @@ public class LevelUIHandler : MonoBehaviour
     }
     public IEnumerator PanelHide()
     {
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(2);
         UIPanel.SetActive(false);
     }
 }
