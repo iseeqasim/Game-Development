@@ -76,79 +76,157 @@ public class WinManager4 : MonoBehaviour
         // Calculate the current level completion time
         float currentTime = float.Parse(guiText.text);
         nextLevel = SceneManager.GetActiveScene().name;
-        if (nextLevel == "Tutorial")
+        if (nextLevel == "Level-1")
         {
-            float bestTime = PlayerPrefs.GetFloat("BestTimeTutorial", Mathf.Infinity);
+            float bestTime = PlayerPrefs.GetFloat("BestTimeLevel-1", Mathf.Infinity);
             // Compare with the best time
             if (currentTime < bestTime)
             {
                 bestTime = currentTime;
-                PlayerPrefs.SetFloat("BestTimeTutorial", bestTime); // Save the best time
+                PlayerPrefs.SetFloat("BestTimeLevel-1", bestTime); // Save the best time
 
                 // Load the "MainMenu" scene
 
             }
         }
-        else if (nextLevel == "Level1")
+        else if (nextLevel == "Level-2")
         {
-            float bestTime = PlayerPrefs.GetFloat("BestTimeLevel1", Mathf.Infinity);
+            float bestTime = PlayerPrefs.GetFloat("BestTimeLevel-2", Mathf.Infinity);
             // Compare with the best time
             if (currentTime < bestTime)
             {
                 bestTime = currentTime;
-                PlayerPrefs.SetFloat("BestTimeLevel1", bestTime); // Save the best time
+                PlayerPrefs.SetFloat("BestTimeLevel-2", bestTime); // Save the best time
 
                 // Load the "MainMenu" scene
 
             }
         }
-        else if (nextLevel == "Level2")
+        else if (nextLevel == "Level-3")
         {
-            float bestTime = PlayerPrefs.GetFloat("BestTimeLevel2", Mathf.Infinity);
+            float bestTime = PlayerPrefs.GetFloat("BestTimeLevel-3", Mathf.Infinity);
             // Compare with the best time
             if (currentTime < bestTime)
             {
                 bestTime = currentTime;
-                PlayerPrefs.SetFloat("BestTimeLevel2", bestTime); // Save the best time
+                PlayerPrefs.SetFloat("BestTimeLevel-3", bestTime); // Save the best time
 
                 // Load the "MainMenu" scene
 
             }
         }
-        else if (nextLevel == "Level3")
+        else if (nextLevel == "Level-4")
         {
-            float bestTime = PlayerPrefs.GetFloat("BestTimeLevel3", Mathf.Infinity);
+            float bestTime = PlayerPrefs.GetFloat("BestTimeLevel-4", Mathf.Infinity);
             // Compare with the best time
             if (currentTime < bestTime)
             {
                 bestTime = currentTime;
-                PlayerPrefs.SetFloat("BestTimeLevel3", bestTime); // Save the best time
+                PlayerPrefs.SetFloat("BestTimeLevel-4", bestTime); // Save the best time
 
                 // Load the "MainMenu" scene
 
             }
         }
-        else if (nextLevel == "Level4")
+        else if (nextLevel == "Level-5")
         {
-            float bestTime = PlayerPrefs.GetFloat("BestTimeLevel4", Mathf.Infinity);
+            float bestTime = PlayerPrefs.GetFloat("BestTimeLevel-5", Mathf.Infinity);
             // Compare with the best time
             if (currentTime < bestTime)
             {
                 bestTime = currentTime;
-                PlayerPrefs.SetFloat("BestTimeLevel4", bestTime); // Save the best time
+                PlayerPrefs.SetFloat("BestTimeLevel-5", bestTime); // Save the best time
 
                 // Load the "MainMenu" scene
 
             }
         }
-        else if (nextLevel == "Level5")
+        else if (nextLevel == "Level-6")
         {
-            float bestTime = PlayerPrefs.GetFloat("BestTimeLevel5", Mathf.Infinity);
+            float bestTime = PlayerPrefs.GetFloat("BestTimeLevel-6", Mathf.Infinity);
             // Compare with the best time
             if (currentTime < bestTime)
             {
                 bestTime = currentTime;
-                PlayerPrefs.SetFloat("BestTimeLevel5", bestTime); // Save the best time
+                PlayerPrefs.SetFloat("BestTimeLevel-6", bestTime); // Save the best time
+
+                // Load the "MainMenu" scene
+
+            }
+        }
+        else if (nextLevel == "Level-7")
+        {
+            float bestTime = PlayerPrefs.GetFloat("BestTimeLevel-7", Mathf.Infinity);
+            // Compare with the best time
+            if (currentTime < bestTime)
+            {
+                bestTime = currentTime;
+                PlayerPrefs.SetFloat("BestTimeLevel-7", bestTime); // Save the best time
+
+                // Load the "MainMenu" scene
+
+            }
+        }
+        else if (nextLevel == "Level-8")
+        {
+            float bestTime = PlayerPrefs.GetFloat("BestTimeLevel-8", Mathf.Infinity);
+            // Compare with the best time
+            if (currentTime < bestTime)
+            {
+                bestTime = currentTime;
+                PlayerPrefs.SetFloat("BestTimeLevel-8", bestTime); // Save the best time
+
+                // Load the "MainMenu" scene
+
+            }
+        }
+        else if (nextLevel == "Level-9")
+        {
+            float bestTime = PlayerPrefs.GetFloat("BestTimeLevel-9", Mathf.Infinity);
+            // Compare with the best time
+            if (currentTime < bestTime)
+            {
+                bestTime = currentTime;
+                PlayerPrefs.SetFloat("BestTimeLevel-9", bestTime); // Save the best time
+
+                // Load the "MainMenu" scene
+
+            }
+        }
+        else if (nextLevel == "Level-10")
+        {
+            float bestTime = PlayerPrefs.GetFloat("BestTimeLevel-10", Mathf.Infinity);
+            // Compare with the best time
+            if (currentTime < bestTime)
+            {
+                bestTime = currentTime;
+                PlayerPrefs.SetFloat("BestTimeLevel-10", bestTime); // Save the best time
+
+                // Load the "MainMenu" scene
+
+            }
+        }
+        else if (nextLevel == "Level-11")
+        {
+            float bestTime = PlayerPrefs.GetFloat("BestTimeLevel-11", Mathf.Infinity);
+            // Compare with the best time
+            if (currentTime < bestTime)
+            {
+                bestTime = currentTime;
+                PlayerPrefs.SetFloat("BestTimeLevel-11", bestTime); // Save the best time
+
+                // Load the "MainMenu" scene
+
+            }
+        }
+        else if (nextLevel == "Level-12")
+        {
+            float bestTime = PlayerPrefs.GetFloat("BestTimeLevel-12", Mathf.Infinity);
+            // Compare with the best time
+            if (currentTime < bestTime)
+            {
+                bestTime = currentTime;
+                PlayerPrefs.SetFloat("BestTimeLevel-12", bestTime); // Save the best time
 
                 // Load the "MainMenu" scene
 

@@ -67,6 +67,7 @@
     <Compile Include="Assets\WinManager4.cs" />
     <Compile Include="Assets\TrackLL.cs" />
     <Compile Include="Assets\LeaderboardScript.cs" />
+    <Compile Include="Assets\WinManager1.cs" />
     <Compile Include="Assets\TrackRR.cs" />
     <Compile Include="Assets\_HospitalInc\ThirdParty\Polygon Arsenal 2\Scripts\PolygonSoundSpawn.cs" />
     <Compile Include="Assets\NextLevelLoader.cs" />

@@ -20,6 +20,6 @@ public class PlayScript : MonoBehaviour
     }
     public void PlayGame()
     {
-        SceneManager.LoadScene("Tutorial");
+        SceneManager.LoadScene("Level-1");
     }
 }
