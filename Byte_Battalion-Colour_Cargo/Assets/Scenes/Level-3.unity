@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.14709482, g: 0.38462928, b: 0.5319209, a: 1}
+  m_IndirectSpecularColor: {r: 0.14707135, g: 0.38463965, b: 0.53192365, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3870,6 +3870,11 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.06960689, y: 0.0828733, z: 0.18}
   m_Center: {x: -0.00009931996, y: -0.01133685, z: -0.01}
+--- !u!1 &803207272 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 475101250702339697, guid: 1999e8bf820aff54692f7dade2e847b3, type: 3}
+  m_PrefabInstance: {fileID: 1627613216}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &824345613
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5596,6 +5601,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 9001461506607827935, guid: 60e110cd31ccf384c967f295fee9dc67, type: 3}
   m_PrefabInstance: {fileID: 382734684}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1544353501 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3438626292702478421, guid: 1999e8bf820aff54692f7dade2e847b3, type: 3}
+  m_PrefabInstance: {fileID: 1627613216}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06bac6d4945014945a58a413d7876170, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!82 &1582790360 stripped
 AudioSource:
   m_CorrespondingSourceObject: {fileID: 8808654311910218668, guid: a671b9c48d9fbf44c9fbfd5c44f3ba8d, type: 3}
@@ -5611,13 +5627,14 @@ GameObject:
   m_Component:
   - component: {fileID: 1593938646}
   - component: {fileID: 1593938645}
+  - component: {fileID: 1593938647}
   m_Layer: 0
   m_Name: LevelIntroUIHandler
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1593938645
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5631,6 +5648,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   UIPanel: {fileID: 1627613218}
+  UIPanel2: {fileID: 803207272}
+  EndlessStarted: 0
+  nll: {fileID: 1544353501}
 --- !u!4 &1593938646
 Transform:
   m_ObjectHideFlags: 0
@@ -5646,6 +5666,33 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1593938647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1593938644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06bac6d4945014945a58a413d7876170, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextLevel: 
+  Levels:
+  - Level-2
+  - Level-3
+  - Level-4
+  - Level-5
+  - Level-6
+  - Level-7
+  - Level-8
+  - Level-9
+  - Level-10
+  - Level-11
+  - Level-12
+  isEndless: 0
+  Endlesslevelnumber: 13
 --- !u!1001 &1602899080
 PrefabInstance:
   m_ObjectHideFlags: 0

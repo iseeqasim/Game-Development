@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.21510062, g: 0.23528284, b: 0.24974625, a: 1}
+  m_IndirectSpecularColor: {r: 0.21514224, g: 0.23529583, b: 0.24969333, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -412,13 +412,14 @@ GameObject:
   m_Component:
   - component: {fileID: 135227407}
   - component: {fileID: 135227406}
+  - component: {fileID: 135227408}
   m_Layer: 0
   m_Name: LevelIntroUIHandler
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &135227406
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -432,6 +433,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   UIPanel: {fileID: 341578991}
+  UIPanel2: {fileID: 341578993}
+  EndlessStarted: 0
+  nll: {fileID: 1626232759}
 --- !u!4 &135227407
 Transform:
   m_ObjectHideFlags: 0
@@ -447,6 +451,33 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &135227408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 135227405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06bac6d4945014945a58a413d7876170, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextLevel: 
+  Levels:
+  - Level-2
+  - Level-3
+  - Level-4
+  - Level-5
+  - Level-6
+  - Level-7
+  - Level-8
+  - Level-9
+  - Level-10
+  - Level-11
+  - Level-12
+  isEndless: 0
+  Endlesslevelnumber: 13
 --- !u!1001 &138476128
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2237,6 +2268,11 @@ GameObject:
 --- !u!1 &341578992 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7366836054660629560, guid: 1999e8bf820aff54692f7dade2e847b3, type: 3}
+  m_PrefabInstance: {fileID: 341578989}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &341578993 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 475101250702339697, guid: 1999e8bf820aff54692f7dade2e847b3, type: 3}
   m_PrefabInstance: {fileID: 341578989}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &341578994 stripped
@@ -7776,6 +7812,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 472f751baf9bd5b4f8b0e0b90162a900, type: 3}
   m_PrefabInstance: {fileID: 1616746614}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1626232759 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3438626292702478421, guid: 1999e8bf820aff54692f7dade2e847b3, type: 3}
+  m_PrefabInstance: {fileID: 341578989}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06bac6d4945014945a58a413d7876170, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1626579312 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3589307791398453557, guid: ca163bb43682ac142a881fe4b306351e, type: 3}

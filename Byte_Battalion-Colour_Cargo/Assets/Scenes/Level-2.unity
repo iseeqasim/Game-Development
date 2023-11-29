@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.14709482, g: 0.38462928, b: 0.5319209, a: 1}
+  m_IndirectSpecularColor: {r: 0.14707135, g: 0.38463965, b: 0.53192365, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5563,13 +5563,14 @@ GameObject:
   m_Component:
   - component: {fileID: 1420907870}
   - component: {fileID: 1420907869}
+  - component: {fileID: 1420907871}
   m_Layer: 0
   m_Name: LevelIntroUIHandler
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1420907869
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5583,6 +5584,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   UIPanel: {fileID: 1155811693}
+  UIPanel2: {fileID: 7366836054028294101}
+  EndlessStarted: 0
+  nll: {fileID: 7366836054028294102}
 --- !u!4 &1420907870
 Transform:
   m_ObjectHideFlags: 0
@@ -5598,6 +5602,33 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1420907871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1420907868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06bac6d4945014945a58a413d7876170, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextLevel: 
+  Levels:
+  - Level-2
+  - Level-3
+  - Level-4
+  - Level-5
+  - Level-6
+  - Level-7
+  - Level-8
+  - Level-9
+  - Level-10
+  - Level-11
+  - Level-12
+  isEndless: 0
+  Endlesslevelnumber: 13
 --- !u!1 &1438835783 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2604937036283183730, guid: e3dea1c50cc0df045855a4c1c6fb044f, type: 3}
@@ -8394,6 +8425,22 @@ PrefabInstance:
       objectReference: {fileID: 1703251524}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1999e8bf820aff54692f7dade2e847b3, type: 3}
+--- !u!1 &7366836054028294101 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 475101250702339697, guid: 1999e8bf820aff54692f7dade2e847b3, type: 3}
+  m_PrefabInstance: {fileID: 7366836054028294100}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7366836054028294102 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3438626292702478421, guid: 1999e8bf820aff54692f7dade2e847b3, type: 3}
+  m_PrefabInstance: {fileID: 7366836054028294100}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06bac6d4945014945a58a413d7876170, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &7574068010776549014
 PrefabInstance:
   m_ObjectHideFlags: 0

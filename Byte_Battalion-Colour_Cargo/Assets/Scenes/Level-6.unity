@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.21510062, g: 0.23528284, b: 0.24974625, a: 1}
+  m_IndirectSpecularColor: {r: 0.21514224, g: 0.23529583, b: 0.24969333, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -462,6 +462,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7366836055020003001, guid: 1999e8bf820aff54692f7dade2e847b3, type: 3}
   m_PrefabInstance: {fileID: 1144733271}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &166615021 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3438626292702478421, guid: 1999e8bf820aff54692f7dade2e847b3, type: 3}
+  m_PrefabInstance: {fileID: 1144733271}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06bac6d4945014945a58a413d7876170, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &188628235
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3356,13 +3367,14 @@ GameObject:
   m_Component:
   - component: {fileID: 948860711}
   - component: {fileID: 948860710}
+  - component: {fileID: 948860712}
   m_Layer: 0
   m_Name: LevelIntroUIHandler
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &948860710
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3376,6 +3388,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   UIPanel: {fileID: 165797561}
+  UIPanel2: {fileID: 1176632361}
+  EndlessStarted: 0
+  nll: {fileID: 166615021}
 --- !u!4 &948860711
 Transform:
   m_ObjectHideFlags: 0
@@ -3391,6 +3406,33 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &948860712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 948860709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06bac6d4945014945a58a413d7876170, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextLevel: 
+  Levels:
+  - Level-2
+  - Level-3
+  - Level-4
+  - Level-5
+  - Level-6
+  - Level-7
+  - Level-8
+  - Level-9
+  - Level-10
+  - Level-11
+  - Level-12
+  isEndless: 0
+  Endlesslevelnumber: 13
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -4469,6 +4511,11 @@ RectTransform:
 ParticleSystem:
   m_CorrespondingSourceObject: {fileID: 3832345875772817802, guid: 1eecb0cf24e04dd4f8e33237cc8dcc58, type: 3}
   m_PrefabInstance: {fileID: 2063649193}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1176632361 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 475101250702339697, guid: 1999e8bf820aff54692f7dade2e847b3, type: 3}
+  m_PrefabInstance: {fileID: 1144733271}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1192049318
 PrefabInstance:

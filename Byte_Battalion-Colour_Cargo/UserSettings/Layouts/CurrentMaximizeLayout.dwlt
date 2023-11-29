@@ -26,7 +26,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 73137
+  controlID: 14268
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -110,7 +110,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 200}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 73006
+  controlID: 14091
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -395,9 +395,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 252.26086, y: 1338.7457, z: 0}
+    m_Target: {x: 720, y: 1544, z: 0}
     speed: 2
-    m_Value: {x: 252.26086, y: 1338.7457, z: 0}
+    m_Value: {x: 720, y: 1544, z: 0}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -448,9 +448,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 1386.504
+    m_Target: 1716.5186
     speed: 2
-    m_Value: 1386.504
+    m_Value: 1716.5186
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -560,7 +560,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: fe2cf4ffce36f4ff703cf4ffe84af4ff7859f4ff0c95f4ffe8ccf4ff7afcf4ffe60af5fff61bf5ff904cf5ff5c57f5ffc840f6ff7878f6ff08abf6fff8daf6ffd8eaf6ff9022f7ffc650f7ff0a7ff7ff428df7ffa0cdf7ffa4cdf7ffe0d4f7ff5ce3f7ff503cf8ff8a4af8ffd27ef8ff548df8ff709bf8ffd0aaf8ffccd9f8ff2adbf8ff9609f9ffc437f9ff9e66f9fffc67f9ff7aabf9ffd8acf9ffd6c2f9ffeac2f9ffeec2f9fff2c2f9ff5ccbf9ffbcd4f9ffd0d4f9ffd4d4f9ffd8d4f9ff9cdcf9ff5ae5f9ff6ee5f9ff72e5f9ff76e5f9ffbeedf9ff585afaffa269faffe677faff0686faff2e87faff8490faff2696faff520cfbff660cfbff6a0cfbff3214fbff9e1efbffde35fbff0c40fbffae45fbff4e4ffbffbc5dfbffd66bfbfff279fbfff2a7fbff88c1fbffaccffbffacfdfbff5807fcffce4dfcffac57fcff9861fcff167afcff4a86fcff0689fcff1493fcffca95fcfff09ffcff7ec4fcff84d4fcff3aecfcff041afdffca32fdffe449fdff9075fdff64abfdff60b6fdff14e5fdff680dfeff163dfeffa055feff5884feff0893feff7aaafeff7cb4feff00ccfeff06defeffeae7feffb6f1feffe6fbfeff8405ffff8e0fffff3019ffffd022ffff702cffff4c43ffff4a55ffff166cffffbc75ffffd28cffff7a9effff90b5ffffa6ccffffbce3ffff32fbffffdcb600003c410100fe7701009a3f02006e5e0200a4d6020054e10200d00404006808040090760400d82005000431050008d9080012d9080074d90800
+      m_ExpandedIDs: a0f2fcff2621fdff584ffdfff466fdff3e7efdffe688fdff0c93fdff309dfdff58acfdff02bbfdffa6c9fdff2af8fdff9cd3fefffad4feff2202ffff8003ffff9c05ffff161bffff161fffff5832ffffee39fffffc3cffff6c44ffff2847ffff944effff4a51ffff485affff6c60ffff6269ffff046fffff767cffff9e7dffffc2aaffff20acffffd8f9ffff36fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -576,7 +576,7 @@ MonoBehaviour:
         m_IsRenaming: 0
         m_OriginalEventType: 11
         m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 7}
+        m_ClientGUIView: {fileID: 4}
       m_SearchString: 
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
@@ -603,8 +603,8 @@ MonoBehaviour:
     y: 0
     width: 353
     height: 939
-  m_MinSize: {x: 230, y: 250}
-  m_MaxSize: {x: 10000, y: 10000}
+  m_MinSize: {x: 232, y: 271}
+  m_MaxSize: {x: 10002, y: 10021}
   m_ActualView: {fileID: 10}
   m_Panes:
   - {fileID: 10}
@@ -659,14 +659,14 @@ MonoBehaviour:
   m_LastFolders:
   - Assets
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\iseeq\OneDrive\Documents\Game-Development\Byte_Battalion-Colour_Cargo
+  m_LastProjectPath: C:\Hamid Masood\Unity\Game-Development\Byte_Battalion-Colour_Cargo
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 70740000
-    m_LastClickedID: 29808
-    m_ExpandedIDs: 000000001c7400001e74000020740000227400002474000026740000287400002a7400002c7400002e74000030740000ffffff7f
+    m_SelectedIDs: 46900000
+    m_LastClickedID: 36934
+    m_ExpandedIDs: 0000000046900000489000004a9000004c9000004e90000050900000529000005490000056900000589000005a9000005c90000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -694,7 +694,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000001c7400001e74000020740000227400002474000026740000287400002a7400002c7400002e74000030740000ffffff7f
+    m_ExpandedIDs: 0000000046900000489000004a9000004c9000004e90000050900000529000005490000056900000589000005a9000005c90000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -746,7 +746,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 7247.5}
+    m_ScrollPosition: {x: 0, y: 6640}
     m_GridSize: 64
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 182
