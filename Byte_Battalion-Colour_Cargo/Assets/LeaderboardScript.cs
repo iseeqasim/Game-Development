@@ -21,7 +21,6 @@ public class LeaderboardScript : MonoBehaviour
     }
     public void Leaderboard()
     {
-        Debug.Log("Leaderboard button pressed");
         selectlevelpanel.SetActive(true);
     }
     public void back()

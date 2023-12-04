@@ -76,6 +76,8 @@ public class PauseScript : MonoBehaviour
     public void MainMenu()
     {
         Time.timeScale = 1.0f;
+        NextLevelLoader.isEndless = false;
+        NextLevelLoader.levelCount = 12;
         SceneManager.LoadScene("MainMenu");
     }
     public void Restart()
