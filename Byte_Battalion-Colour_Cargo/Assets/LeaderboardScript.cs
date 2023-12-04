@@ -80,5 +80,4 @@ public class LeaderboardScript : MonoBehaviour
     {
         SceneManager.LoadScene("Level-12");
     }
-
 }

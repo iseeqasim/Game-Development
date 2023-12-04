@@ -29,12 +29,6 @@ public class NextLevelLoader : MonoBehaviour
     {
         nextLevel=SceneManager.GetActiveScene().name;
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
     public void NextLevel()
     {
         if (!isEndless)
@@ -95,7 +89,6 @@ public class NextLevelLoader : MonoBehaviour
         }
         else if(isEndless) 
         {
-            
             int RandomLevel = Random.Range(0, 10);
             nextLevel = Levels[RandomLevel];
             Endlesslevelnumber++;
