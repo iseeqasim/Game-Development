@@ -2,21 +2,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+using GoogleMobileAds.Api;
 
 
 public class PlayScript : MonoBehaviour
 {
-    // Start is called before the first frame update
+    private BannerView bannerView;
+    public string bannerAdUnitId = "ca-app-pub-3940256099942544/6300978111";
     void Start()
     {
-        
+        bannerView = new BannerView(bannerAdUnitId, AdSize.Banner, AdPosition.Bottom);
+        AdRequest request = new AdRequest();
+        bannerView.LoadAd(request);
+        bannerView.Show();
     }
 
-    // Update is called once per frame
-    void Update()
+    void OnDestroy()
     {
-        
+        bannerView.Destroy();
     }
     public void PlayGame()
     {

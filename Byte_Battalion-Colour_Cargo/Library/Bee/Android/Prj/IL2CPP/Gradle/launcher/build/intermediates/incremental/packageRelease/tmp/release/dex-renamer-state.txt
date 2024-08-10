@@ -1,4 +1,7 @@
-#Fri Aug 25 00:55:55 PKT 2023
-base.0=C\:\\Users\\iseeq\\OneDrive\\Documents\\Game-Development\\Byte_Battalion-Colour_Cargo\\Library\\Bee\\Android\\Prj\\IL2CPP\\Gradle\\launcher\\build\\intermediates\\dex\\release\\mergeDexRelease\\classes.dex
+#Thu Aug 08 11:02:37 PKT 2024
+base.0=H\:\\Unity\\Byte_Battalion-Colour_Cargo_DragDropFixed\\Byte_Battalion-Colour_Cargo_DragDropFixed\\Library\\Bee\\Android\\Prj\\IL2CPP\\Gradle\\launcher\\build\\intermediates\\dex\\release\\mergeDexRelease\\classes.dex
+path.1=classes2.dex
+renamed.1=classes2.dex
 path.0=classes.dex
 renamed.0=classes.dex
+base.1=H\:\\Unity\\Byte_Battalion-Colour_Cargo_DragDropFixed\\Byte_Battalion-Colour_Cargo_DragDropFixed\\Library\\Bee\\Android\\Prj\\IL2CPP\\Gradle\\launcher\\build\\intermediates\\dex\\release\\mergeDexRelease\\classes2.dex

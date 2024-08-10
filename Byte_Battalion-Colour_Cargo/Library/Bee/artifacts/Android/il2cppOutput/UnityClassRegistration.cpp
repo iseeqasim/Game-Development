@@ -15,6 +15,9 @@ extern "C" void RegisterStaticallyLinkedModulesGranular()
 	void RegisterModule_Audio();
 	RegisterModule_Audio();
 
+	void RegisterModule_ImageConversion();
+	RegisterModule_ImageConversion();
+
 	void RegisterModule_InputLegacy();
 	RegisterModule_InputLegacy();
 
@@ -129,6 +132,7 @@ class ParticleSystem; template <> void RegisterUnityClass<ParticleSystem>(const 
 class ParticleSystemRenderer; template <> void RegisterUnityClass<ParticleSystemRenderer>(const char*);
 class BoxCollider; template <> void RegisterUnityClass<BoxCollider>(const char*);
 class Collider; template <> void RegisterUnityClass<Collider>(const char*);
+class MeshCollider; template <> void RegisterUnityClass<MeshCollider>(const char*);
 class PhysicsManager; template <> void RegisterUnityClass<PhysicsManager>(const char*);
 class Rigidbody; template <> void RegisterUnityClass<Rigidbody>(const char*);
 class SphereCollider; template <> void RegisterUnityClass<SphereCollider>(const char*);
@@ -141,7 +145,7 @@ void RegisterAllClasses()
 {
 void RegisterBuiltinTypes();
 RegisterBuiltinTypes();
-	//Total: 75 non stripped classes
+	//Total: 76 non stripped classes
 	//0. Animator
 	RegisterUnityClass<Animator>("Animation");
 	//1. AnimatorController
@@ -278,19 +282,21 @@ RegisterBuiltinTypes();
 	RegisterUnityClass<BoxCollider>("Physics");
 	//67. Collider
 	RegisterUnityClass<Collider>("Physics");
-	//68. PhysicsManager
+	//68. MeshCollider
+	RegisterUnityClass<MeshCollider>("Physics");
+	//69. PhysicsManager
 	RegisterUnityClass<PhysicsManager>("Physics");
-	//69. Rigidbody
+	//70. Rigidbody
 	RegisterUnityClass<Rigidbody>("Physics");
-	//70. SphereCollider
+	//71. SphereCollider
 	RegisterUnityClass<SphereCollider>("Physics");
-	//71. Font
+	//72. Font
 	RegisterUnityClass<TextRendering::Font>("TextRendering");
-	//72. Canvas
+	//73. Canvas
 	RegisterUnityClass<UI::Canvas>("UI");
-	//73. CanvasGroup
+	//74. CanvasGroup
 	RegisterUnityClass<UI::CanvasGroup>("UI");
-	//74. CanvasRenderer
+	//75. CanvasRenderer
 	RegisterUnityClass<UI::CanvasRenderer>("UI");
 
 }

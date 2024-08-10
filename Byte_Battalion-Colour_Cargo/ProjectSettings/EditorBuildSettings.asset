@@ -51,23 +51,14 @@ EditorBuildSettings:
     path: 
     guid: 00000000000000000000000000000000
   - enabled: 0
-    path: Assets/Scenes/Level1.unity
-    guid: 115d52af6e440de43990033fcebcac56
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 0
-    path: Assets/Scenes/Level2.unity
-    guid: 268a8b7795a9c8b4ebc0016224f7846b
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 0
-    path: Assets/Scenes/Level3.unity
-    guid: 7b6ebdac8aea393418082a8e925b882a
-  - enabled: 0
-    path: Assets/Scenes/Level4.unity
-    guid: ab1fd9fcef4a11e438ebb9c25ae262dc
-  - enabled: 0
-    path: Assets/Scenes/Level5.unity
-    guid: 3a805cf399b32244abaddc684feaf7af
-  - enabled: 0
-    path: Assets/Scenes/Level6.unity
-    guid: d16f6759765174b4983dcc85df07ed35
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
@@ -77,4 +68,16 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: Assets/Scenes/InterstitialAd.unity
+    guid: 06999dd67def48047b12af03c67c1ffd
   m_configObjects: {}

@@ -33,16 +33,13 @@ public class WinManager5 : MonoBehaviour
 
     void Start()
     {
-        
-        levelWinPanel.SetActive(true);
-        Time.timeScale = 0f;
+        levelWinPanel.SetActive(false);
     }
 
 
     // Update is called once per frame
     void Update()
     {
-        
         // Check if the first moving object has started moving
         if (!firstObjectStartedMoving && firstMovingObject != null && firstMovingObject.GetComponent<Train>().IsMovementStarted())
         {
@@ -74,7 +71,6 @@ public class WinManager5 : MonoBehaviour
             delayStarted = true;
             StartCoroutine(DelayAndLoadScene());
         }
-        
     }
 
     // Coroutine for delaying and loading the scene

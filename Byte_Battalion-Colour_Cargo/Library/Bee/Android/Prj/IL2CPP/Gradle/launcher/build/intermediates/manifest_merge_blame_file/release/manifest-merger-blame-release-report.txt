@@ -1,136 +1,554 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-3    package="com.DefaultCompany.Byte_BattalionColour_Cargo"
+3    package="com.color.cargo.bytebattalion"
 4    android:installLocation="preferExternal"
 5    android:versionCode="1"
 6    android:versionName="0.1" >
 7
 8    <uses-sdk
 9        android:minSdkVersion="22"
-9-->C:\Users\iseeq\OneDrive\Documents\Game-Development\Byte_Battalion-Colour_Cargo\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml
-10        android:targetSdkVersion="30" />
-10-->C:\Users\iseeq\OneDrive\Documents\Game-Development\Byte_Battalion-Colour_Cargo\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml
+9-->H:\Unity\Byte_Battalion-Colour_Cargo_DragDropFixed\Byte_Battalion-Colour_Cargo_DragDropFixed\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml
+10        android:targetSdkVersion="34" />
+10-->H:\Unity\Byte_Battalion-Colour_Cargo_DragDropFixed\Byte_Battalion-Colour_Cargo_DragDropFixed\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml
 11
 12    <supports-screens
-12-->C:\Users\iseeq\OneDrive\Documents\Game-Development\Byte_Battalion-Colour_Cargo\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:3:3-163
+12-->H:\Unity\Byte_Battalion-Colour_Cargo_DragDropFixed\Byte_Battalion-Colour_Cargo_DragDropFixed\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:3:3-163
 13        android:anyDensity="true"
-13-->C:\Users\iseeq\OneDrive\Documents\Game-Development\Byte_Battalion-Colour_Cargo\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:3:135-160
+13-->H:\Unity\Byte_Battalion-Colour_Cargo_DragDropFixed\Byte_Battalion-Colour_Cargo_DragDropFixed\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:3:135-160
 14        android:largeScreens="true"
-14-->C:\Users\iseeq\OneDrive\Documents\Game-Development\Byte_Battalion-Colour_Cargo\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:3:78-105
+14-->H:\Unity\Byte_Battalion-Colour_Cargo_DragDropFixed\Byte_Battalion-Colour_Cargo_DragDropFixed\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:3:78-105
 15        android:normalScreens="true"
-15-->C:\Users\iseeq\OneDrive\Documents\Game-Development\Byte_Battalion-Colour_Cargo\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:3:49-77
+15-->H:\Unity\Byte_Battalion-Colour_Cargo_DragDropFixed\Byte_Battalion-Colour_Cargo_DragDropFixed\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:3:49-77
 16        android:smallScreens="true"
-16-->C:\Users\iseeq\OneDrive\Documents\Game-Development\Byte_Battalion-Colour_Cargo\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:3:21-48
+16-->H:\Unity\Byte_Battalion-Colour_Cargo_DragDropFixed\Byte_Battalion-Colour_Cargo_DragDropFixed\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:3:21-48
 17        android:xlargeScreens="true" />
-17-->C:\Users\iseeq\OneDrive\Documents\Game-Development\Byte_Battalion-Colour_Cargo\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:3:106-134
+17-->H:\Unity\Byte_Battalion-Colour_Cargo_DragDropFixed\Byte_Battalion-Colour_Cargo_DragDropFixed\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:3:106-134
 18
 19    <uses-feature android:glEsVersion="0x00030000" />
-19-->[:unityLibrary] C:\Users\iseeq\OneDrive\Documents\Game-Development\Byte_Battalion-Colour_Cargo\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:12:5-54
-19-->[:unityLibrary] C:\Users\iseeq\OneDrive\Documents\Game-Development\Byte_Battalion-Colour_Cargo\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:12:19-51
+19-->[:unityLibrary] H:\Unity\Byte_Battalion-Colour_Cargo_DragDropFixed\Byte_Battalion-Colour_Cargo_DragDropFixed\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:10:5-54
+19-->[:unityLibrary] H:\Unity\Byte_Battalion-Colour_Cargo_DragDropFixed\Byte_Battalion-Colour_Cargo_DragDropFixed\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:10:19-51
 20    <uses-feature
-20-->[:unityLibrary] C:\Users\iseeq\OneDrive\Documents\Game-Development\Byte_Battalion-Colour_Cargo\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:13:5-15:36
+20-->[:unityLibrary] H:\Unity\Byte_Battalion-Colour_Cargo_DragDropFixed\Byte_Battalion-Colour_Cargo_DragDropFixed\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:11:5-13:36
 21        android:name="android.hardware.vulkan.version"
-21-->[:unityLibrary] C:\Users\iseeq\OneDrive\Documents\Game-Development\Byte_Battalion-Colour_Cargo\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:14:9-55
+21-->[:unityLibrary] H:\Unity\Byte_Battalion-Colour_Cargo_DragDropFixed\Byte_Battalion-Colour_Cargo_DragDropFixed\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:12:9-55
 22        android:required="false" />
-22-->[:unityLibrary] C:\Users\iseeq\OneDrive\Documents\Game-Development\Byte_Battalion-Colour_Cargo\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:15:9-33
+22-->[:unityLibrary] H:\Unity\Byte_Battalion-Colour_Cargo_DragDropFixed\Byte_Battalion-Colour_Cargo_DragDropFixed\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:13:9-33
 23    <uses-feature
-23-->[:unityLibrary] C:\Users\iseeq\OneDrive\Documents\Game-Development\Byte_Battalion-Colour_Cargo\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:16:5-18:36
+23-->[:unityLibrary] H:\Unity\Byte_Battalion-Colour_Cargo_DragDropFixed\Byte_Battalion-Colour_Cargo_DragDropFixed\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:14:5-16:36
 24        android:name="android.hardware.touchscreen"
-24-->[:unityLibrary] C:\Users\iseeq\OneDrive\Documents\Game-Development\Byte_Battalion-Colour_Cargo\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:17:9-52
+24-->[:unityLibrary] H:\Unity\Byte_Battalion-Colour_Cargo_DragDropFixed\Byte_Battalion-Colour_Cargo_DragDropFixed\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:15:9-52
 25        android:required="false" />
-25-->[:unityLibrary] C:\Users\iseeq\OneDrive\Documents\Game-Development\Byte_Battalion-Colour_Cargo\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:18:9-33
+25-->[:unityLibrary] H:\Unity\Byte_Battalion-Colour_Cargo_DragDropFixed\Byte_Battalion-Colour_Cargo_DragDropFixed\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:16:9-33
 26    <uses-feature
-26-->[:unityLibrary] C:\Users\iseeq\OneDrive\Documents\Game-Development\Byte_Battalion-Colour_Cargo\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:19:5-21:36
+26-->[:unityLibrary] H:\Unity\Byte_Battalion-Colour_Cargo_DragDropFixed\Byte_Battalion-Colour_Cargo_DragDropFixed\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:17:5-19:36
 27        android:name="android.hardware.touchscreen.multitouch"
-27-->[:unityLibrary] C:\Users\iseeq\OneDrive\Documents\Game-Development\Byte_Battalion-Colour_Cargo\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:20:9-63
+27-->[:unityLibrary] H:\Unity\Byte_Battalion-Colour_Cargo_DragDropFixed\Byte_Battalion-Colour_Cargo_DragDropFixed\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:18:9-63
 28        android:required="false" />
-28-->[:unityLibrary] C:\Users\iseeq\OneDrive\Documents\Game-Development\Byte_Battalion-Colour_Cargo\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:21:9-33
+28-->[:unityLibrary] H:\Unity\Byte_Battalion-Colour_Cargo_DragDropFixed\Byte_Battalion-Colour_Cargo_DragDropFixed\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:19:9-33
 29    <uses-feature
-29-->[:unityLibrary] C:\Users\iseeq\OneDrive\Documents\Game-Development\Byte_Battalion-Colour_Cargo\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:22:5-24:36
+29-->[:unityLibrary] H:\Unity\Byte_Battalion-Colour_Cargo_DragDropFixed\Byte_Battalion-Colour_Cargo_DragDropFixed\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:20:5-22:36
 30        android:name="android.hardware.touchscreen.multitouch.distinct"
-30-->[:unityLibrary] C:\Users\iseeq\OneDrive\Documents\Game-Development\Byte_Battalion-Colour_Cargo\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:23:9-72
-31        android:required="false" />
-31-->[:unityLibrary] C:\Users\iseeq\OneDrive\Documents\Game-Development\Byte_Battalion-Colour_Cargo\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:24:9-33
-32
-33    <application
-33-->C:\Users\iseeq\OneDrive\Documents\Game-Development\Byte_Battalion-Colour_Cargo\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:4:3-83
-34        android:extractNativeLibs="true"
-34-->[:unityLibrary] C:\Users\iseeq\OneDrive\Documents\Game-Development\Byte_Battalion-Colour_Cargo\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:26:18-50
-35        android:icon="@mipmap/app_icon"
-35-->C:\Users\iseeq\OneDrive\Documents\Game-Development\Byte_Battalion-Colour_Cargo\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:4:49-80
-36        android:label="@string/app_name" >
-36-->C:\Users\iseeq\OneDrive\Documents\Game-Development\Byte_Battalion-Colour_Cargo\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:4:16-48
-37        <activity
-37-->[:unityLibrary] C:\Users\iseeq\OneDrive\Documents\Game-Development\Byte_Battalion-Colour_Cargo\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:27:9-47:20
-38            android:name="com.unity3d.player.UnityPlayerActivity"
-38-->[:unityLibrary] C:\Users\iseeq\OneDrive\Documents\Game-Development\Byte_Battalion-Colour_Cargo\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:28:13-66
-39            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale|layoutDirection|density"
-39-->[:unityLibrary] C:\Users\iseeq\OneDrive\Documents\Game-Development\Byte_Battalion-Colour_Cargo\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:29:13-194
-40            android:hardwareAccelerated="false"
-40-->[:unityLibrary] C:\Users\iseeq\OneDrive\Documents\Game-Development\Byte_Battalion-Colour_Cargo\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:30:13-48
-41            android:launchMode="singleTask"
-41-->[:unityLibrary] C:\Users\iseeq\OneDrive\Documents\Game-Development\Byte_Battalion-Colour_Cargo\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:31:13-44
-42            android:resizeableActivity="false"
-42-->[:unityLibrary] C:\Users\iseeq\OneDrive\Documents\Game-Development\Byte_Battalion-Colour_Cargo\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:32:13-47
-43            android:screenOrientation="portrait"
-43-->[:unityLibrary] C:\Users\iseeq\OneDrive\Documents\Game-Development\Byte_Battalion-Colour_Cargo\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:33:13-49
-44            android:theme="@style/UnityThemeSelector" >
-44-->[:unityLibrary] C:\Users\iseeq\OneDrive\Documents\Game-Development\Byte_Battalion-Colour_Cargo\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:34:13-54
-45            <intent-filter>
-45-->[:unityLibrary] C:\Users\iseeq\OneDrive\Documents\Game-Development\Byte_Battalion-Colour_Cargo\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:35:13-39:29
-46                <action android:name="android.intent.action.MAIN" />
-46-->[:unityLibrary] C:\Users\iseeq\OneDrive\Documents\Game-Development\Byte_Battalion-Colour_Cargo\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:36:17-69
-46-->[:unityLibrary] C:\Users\iseeq\OneDrive\Documents\Game-Development\Byte_Battalion-Colour_Cargo\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:36:25-66
-47
-48                <category android:name="android.intent.category.LAUNCHER" />
-48-->[:unityLibrary] C:\Users\iseeq\OneDrive\Documents\Game-Development\Byte_Battalion-Colour_Cargo\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:38:17-77
-48-->[:unityLibrary] C:\Users\iseeq\OneDrive\Documents\Game-Development\Byte_Battalion-Colour_Cargo\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:38:27-74
-49            </intent-filter>
-50
-51            <meta-data
-51-->[:unityLibrary] C:\Users\iseeq\OneDrive\Documents\Game-Development\Byte_Battalion-Colour_Cargo\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:41:13-43:40
-52                android:name="unityplayer.UnityActivity"
-52-->[:unityLibrary] C:\Users\iseeq\OneDrive\Documents\Game-Development\Byte_Battalion-Colour_Cargo\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:42:17-57
-53                android:value="true" />
-53-->[:unityLibrary] C:\Users\iseeq\OneDrive\Documents\Game-Development\Byte_Battalion-Colour_Cargo\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:43:17-37
-54            <meta-data
-54-->[:unityLibrary] C:\Users\iseeq\OneDrive\Documents\Game-Development\Byte_Battalion-Colour_Cargo\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:44:13-46:40
-55                android:name="android.notch_support"
-55-->[:unityLibrary] C:\Users\iseeq\OneDrive\Documents\Game-Development\Byte_Battalion-Colour_Cargo\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:45:17-53
-56                android:value="true" />
-56-->[:unityLibrary] C:\Users\iseeq\OneDrive\Documents\Game-Development\Byte_Battalion-Colour_Cargo\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:46:17-37
-57        </activity>
-58
-59        <meta-data
-59-->[:unityLibrary] C:\Users\iseeq\OneDrive\Documents\Game-Development\Byte_Battalion-Colour_Cargo\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:49:9-51:33
-60            android:name="unity.splash-mode"
-60-->[:unityLibrary] C:\Users\iseeq\OneDrive\Documents\Game-Development\Byte_Battalion-Colour_Cargo\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:50:13-45
-61            android:value="0" />
-61-->[:unityLibrary] C:\Users\iseeq\OneDrive\Documents\Game-Development\Byte_Battalion-Colour_Cargo\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:51:13-30
-62        <meta-data
-62-->[:unityLibrary] C:\Users\iseeq\OneDrive\Documents\Game-Development\Byte_Battalion-Colour_Cargo\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:52:9-54:36
-63            android:name="unity.splash-enable"
-63-->[:unityLibrary] C:\Users\iseeq\OneDrive\Documents\Game-Development\Byte_Battalion-Colour_Cargo\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:53:13-47
-64            android:value="True" />
-64-->[:unityLibrary] C:\Users\iseeq\OneDrive\Documents\Game-Development\Byte_Battalion-Colour_Cargo\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:54:13-33
-65        <meta-data
-65-->[:unityLibrary] C:\Users\iseeq\OneDrive\Documents\Game-Development\Byte_Battalion-Colour_Cargo\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:55:9-57:36
-66            android:name="unity.launch-fullscreen"
-66-->[:unityLibrary] C:\Users\iseeq\OneDrive\Documents\Game-Development\Byte_Battalion-Colour_Cargo\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:56:13-51
-67            android:value="True" />
-67-->[:unityLibrary] C:\Users\iseeq\OneDrive\Documents\Game-Development\Byte_Battalion-Colour_Cargo\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:57:13-33
-68        <meta-data
-68-->[:unityLibrary] C:\Users\iseeq\OneDrive\Documents\Game-Development\Byte_Battalion-Colour_Cargo\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:58:9-60:37
-69            android:name="unity.allow-resizable-window"
-69-->[:unityLibrary] C:\Users\iseeq\OneDrive\Documents\Game-Development\Byte_Battalion-Colour_Cargo\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:59:13-56
-70            android:value="False" />
-70-->[:unityLibrary] C:\Users\iseeq\OneDrive\Documents\Game-Development\Byte_Battalion-Colour_Cargo\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:60:13-34
-71        <meta-data
-71-->[:unityLibrary] C:\Users\iseeq\OneDrive\Documents\Game-Development\Byte_Battalion-Colour_Cargo\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:61:9-63:50
-72            android:name="notch.config"
-72-->[:unityLibrary] C:\Users\iseeq\OneDrive\Documents\Game-Development\Byte_Battalion-Colour_Cargo\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:62:13-40
-73            android:value="portrait|landscape" />
-73-->[:unityLibrary] C:\Users\iseeq\OneDrive\Documents\Game-Development\Byte_Battalion-Colour_Cargo\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:63:13-47
-74    </application>
-75
-76</manifest>
+30-->[:unityLibrary] H:\Unity\Byte_Battalion-Colour_Cargo_DragDropFixed\Byte_Battalion-Colour_Cargo_DragDropFixed\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:21:9-72
+31        android:required="false" /> <!-- Include required permissions for Google Mobile Ads to run -->
+31-->[:unityLibrary] H:\Unity\Byte_Battalion-Colour_Cargo_DragDropFixed\Byte_Battalion-Colour_Cargo_DragDropFixed\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:22:9-33
+32    <uses-permission android:name="android.permission.INTERNET" />
+32-->[com.google.android.gms:play-services-ads-lite:22.5.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\809614d4b4c2d5551d3457131e50e85d\jetified-play-services-ads-lite-22.5.0\AndroidManifest.xml:24:5-67
+32-->[com.google.android.gms:play-services-ads-lite:22.5.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\809614d4b4c2d5551d3457131e50e85d\jetified-play-services-ads-lite-22.5.0\AndroidManifest.xml:24:22-64
+33    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+33-->[com.google.android.gms:play-services-ads-lite:22.5.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\809614d4b4c2d5551d3457131e50e85d\jetified-play-services-ads-lite-22.5.0\AndroidManifest.xml:25:5-79
+33-->[com.google.android.gms:play-services-ads-lite:22.5.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\809614d4b4c2d5551d3457131e50e85d\jetified-play-services-ads-lite-22.5.0\AndroidManifest.xml:25:22-76
+34    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+34-->[com.google.android.gms:play-services-ads-lite:22.5.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\809614d4b4c2d5551d3457131e50e85d\jetified-play-services-ads-lite-22.5.0\AndroidManifest.xml:26:5-79
+34-->[com.google.android.gms:play-services-ads-lite:22.5.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\809614d4b4c2d5551d3457131e50e85d\jetified-play-services-ads-lite-22.5.0\AndroidManifest.xml:26:22-76
+35    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID" />
+35-->[com.google.android.gms:play-services-ads-lite:22.5.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\809614d4b4c2d5551d3457131e50e85d\jetified-play-services-ads-lite-22.5.0\AndroidManifest.xml:27:5-82
+35-->[com.google.android.gms:play-services-ads-lite:22.5.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\809614d4b4c2d5551d3457131e50e85d\jetified-play-services-ads-lite-22.5.0\AndroidManifest.xml:27:22-79
+36    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION" />
+36-->[com.google.android.gms:play-services-ads-lite:22.5.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\809614d4b4c2d5551d3457131e50e85d\jetified-play-services-ads-lite-22.5.0\AndroidManifest.xml:28:5-88
+36-->[com.google.android.gms:play-services-ads-lite:22.5.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\809614d4b4c2d5551d3457131e50e85d\jetified-play-services-ads-lite-22.5.0\AndroidManifest.xml:28:22-85
+37    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_TOPICS" /> <!-- Android package visibility setting -->
+37-->[com.google.android.gms:play-services-ads-lite:22.5.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\809614d4b4c2d5551d3457131e50e85d\jetified-play-services-ads-lite-22.5.0\AndroidManifest.xml:29:5-83
+37-->[com.google.android.gms:play-services-ads-lite:22.5.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\809614d4b4c2d5551d3457131e50e85d\jetified-play-services-ads-lite-22.5.0\AndroidManifest.xml:29:22-80
+38    <queries>
+38-->[com.google.android.gms:play-services-ads-lite:22.5.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\809614d4b4c2d5551d3457131e50e85d\jetified-play-services-ads-lite-22.5.0\AndroidManifest.xml:35:5-51:15
+39
+40        <!-- For browser content -->
+41        <intent>
+41-->[com.google.android.gms:play-services-ads-lite:22.5.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\809614d4b4c2d5551d3457131e50e85d\jetified-play-services-ads-lite-22.5.0\AndroidManifest.xml:38:9-44:18
+42            <action android:name="android.intent.action.VIEW" />
+42-->[com.google.android.gms:play-services-ads-lite:22.5.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\809614d4b4c2d5551d3457131e50e85d\jetified-play-services-ads-lite-22.5.0\AndroidManifest.xml:39:13-65
+42-->[com.google.android.gms:play-services-ads-lite:22.5.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\809614d4b4c2d5551d3457131e50e85d\jetified-play-services-ads-lite-22.5.0\AndroidManifest.xml:39:21-62
+43
+44            <category android:name="android.intent.category.BROWSABLE" />
+44-->[com.google.android.gms:play-services-ads-lite:22.5.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\809614d4b4c2d5551d3457131e50e85d\jetified-play-services-ads-lite-22.5.0\AndroidManifest.xml:41:13-74
+44-->[com.google.android.gms:play-services-ads-lite:22.5.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\809614d4b4c2d5551d3457131e50e85d\jetified-play-services-ads-lite-22.5.0\AndroidManifest.xml:41:23-71
+45
+46            <data android:scheme="https" />
+46-->[com.google.android.gms:play-services-ads-lite:22.5.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\809614d4b4c2d5551d3457131e50e85d\jetified-play-services-ads-lite-22.5.0\AndroidManifest.xml:43:13-44
+46-->[com.google.android.gms:play-services-ads-lite:22.5.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\809614d4b4c2d5551d3457131e50e85d\jetified-play-services-ads-lite-22.5.0\AndroidManifest.xml:43:19-41
+47        </intent>
+48        <!-- End of browser content -->
+49        <!-- For CustomTabsService -->
+50        <intent>
+50-->[com.google.android.gms:play-services-ads-lite:22.5.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\809614d4b4c2d5551d3457131e50e85d\jetified-play-services-ads-lite-22.5.0\AndroidManifest.xml:47:9-49:18
+51            <action android:name="android.support.customtabs.action.CustomTabsService" />
+51-->[com.google.android.gms:play-services-ads-lite:22.5.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\809614d4b4c2d5551d3457131e50e85d\jetified-play-services-ads-lite-22.5.0\AndroidManifest.xml:48:13-90
+51-->[com.google.android.gms:play-services-ads-lite:22.5.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\809614d4b4c2d5551d3457131e50e85d\jetified-play-services-ads-lite-22.5.0\AndroidManifest.xml:48:21-87
+52        </intent>
+53        <!-- End of CustomTabsService -->
+54    </queries>
+55
+56    <uses-permission android:name="android.permission.WAKE_LOCK" />
+56-->[com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\1438eb3fdfd2dacd77b964629fc14d2f\jetified-play-services-measurement-api-21.3.0\AndroidManifest.xml:24:5-68
+56-->[com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\1438eb3fdfd2dacd77b964629fc14d2f\jetified-play-services-measurement-api-21.3.0\AndroidManifest.xml:24:22-65
+57    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+57-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\92887a4b13ce2338b5921543e6dd47f7\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:26:5-110
+57-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\92887a4b13ce2338b5921543e6dd47f7\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:26:22-107
+58    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+58-->[androidx.work:work-runtime:2.7.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\71dfb2c4e7229d54e7a49533553926db\work-runtime-2.7.0\AndroidManifest.xml:28:5-77
+58-->[androidx.work:work-runtime:2.7.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\71dfb2c4e7229d54e7a49533553926db\work-runtime-2.7.0\AndroidManifest.xml:28:22-74
+59
+60    <application
+60-->H:\Unity\Byte_Battalion-Colour_Cargo_DragDropFixed\Byte_Battalion-Colour_Cargo_DragDropFixed\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:4:3-83
+61        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+61-->[androidx.core:core:1.8.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\dfa08d71d9c9c181a0ec69657543d0ce\core-1.8.0\AndroidManifest.xml:24:18-86
+62        android:extractNativeLibs="true"
+62-->[:unityLibrary] H:\Unity\Byte_Battalion-Colour_Cargo_DragDropFixed\Byte_Battalion-Colour_Cargo_DragDropFixed\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:24:18-50
+63        android:icon="@mipmap/app_icon"
+63-->H:\Unity\Byte_Battalion-Colour_Cargo_DragDropFixed\Byte_Battalion-Colour_Cargo_DragDropFixed\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:4:49-80
+64        android:label="@string/app_name" >
+64-->H:\Unity\Byte_Battalion-Colour_Cargo_DragDropFixed\Byte_Battalion-Colour_Cargo_DragDropFixed\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:4:16-48
+65        <activity
+65-->[:unityLibrary] H:\Unity\Byte_Battalion-Colour_Cargo_DragDropFixed\Byte_Battalion-Colour_Cargo_DragDropFixed\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:25:9-46:20
+66            android:name="com.unity3d.player.UnityPlayerActivity"
+66-->[:unityLibrary] H:\Unity\Byte_Battalion-Colour_Cargo_DragDropFixed\Byte_Battalion-Colour_Cargo_DragDropFixed\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:26:13-66
+67            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale|layoutDirection|density"
+67-->[:unityLibrary] H:\Unity\Byte_Battalion-Colour_Cargo_DragDropFixed\Byte_Battalion-Colour_Cargo_DragDropFixed\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:27:13-194
+68            android:exported="true"
+68-->[:unityLibrary] H:\Unity\Byte_Battalion-Colour_Cargo_DragDropFixed\Byte_Battalion-Colour_Cargo_DragDropFixed\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:28:13-36
+69            android:hardwareAccelerated="false"
+69-->[:unityLibrary] H:\Unity\Byte_Battalion-Colour_Cargo_DragDropFixed\Byte_Battalion-Colour_Cargo_DragDropFixed\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:29:13-48
+70            android:launchMode="singleTask"
+70-->[:unityLibrary] H:\Unity\Byte_Battalion-Colour_Cargo_DragDropFixed\Byte_Battalion-Colour_Cargo_DragDropFixed\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:30:13-44
+71            android:resizeableActivity="false"
+71-->[:unityLibrary] H:\Unity\Byte_Battalion-Colour_Cargo_DragDropFixed\Byte_Battalion-Colour_Cargo_DragDropFixed\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:31:13-47
+72            android:screenOrientation="portrait"
+72-->[:unityLibrary] H:\Unity\Byte_Battalion-Colour_Cargo_DragDropFixed\Byte_Battalion-Colour_Cargo_DragDropFixed\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:32:13-49
+73            android:theme="@style/UnityThemeSelector" >
+73-->[:unityLibrary] H:\Unity\Byte_Battalion-Colour_Cargo_DragDropFixed\Byte_Battalion-Colour_Cargo_DragDropFixed\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:33:13-54
+74            <intent-filter>
+74-->[:unityLibrary] H:\Unity\Byte_Battalion-Colour_Cargo_DragDropFixed\Byte_Battalion-Colour_Cargo_DragDropFixed\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:34:13-38:29
+75                <action android:name="android.intent.action.MAIN" />
+75-->[:unityLibrary] H:\Unity\Byte_Battalion-Colour_Cargo_DragDropFixed\Byte_Battalion-Colour_Cargo_DragDropFixed\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:35:17-69
+75-->[:unityLibrary] H:\Unity\Byte_Battalion-Colour_Cargo_DragDropFixed\Byte_Battalion-Colour_Cargo_DragDropFixed\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:35:25-66
+76
+77                <category android:name="android.intent.category.LAUNCHER" />
+77-->[:unityLibrary] H:\Unity\Byte_Battalion-Colour_Cargo_DragDropFixed\Byte_Battalion-Colour_Cargo_DragDropFixed\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:37:17-77
+77-->[:unityLibrary] H:\Unity\Byte_Battalion-Colour_Cargo_DragDropFixed\Byte_Battalion-Colour_Cargo_DragDropFixed\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:37:27-74
+78            </intent-filter>
+79
+80            <meta-data
+80-->[:unityLibrary] H:\Unity\Byte_Battalion-Colour_Cargo_DragDropFixed\Byte_Battalion-Colour_Cargo_DragDropFixed\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:40:13-42:40
+81                android:name="unityplayer.UnityActivity"
+81-->[:unityLibrary] H:\Unity\Byte_Battalion-Colour_Cargo_DragDropFixed\Byte_Battalion-Colour_Cargo_DragDropFixed\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:41:17-57
+82                android:value="true" />
+82-->[:unityLibrary] H:\Unity\Byte_Battalion-Colour_Cargo_DragDropFixed\Byte_Battalion-Colour_Cargo_DragDropFixed\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:42:17-37
+83            <meta-data
+83-->[:unityLibrary] H:\Unity\Byte_Battalion-Colour_Cargo_DragDropFixed\Byte_Battalion-Colour_Cargo_DragDropFixed\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:43:13-45:40
+84                android:name="android.notch_support"
+84-->[:unityLibrary] H:\Unity\Byte_Battalion-Colour_Cargo_DragDropFixed\Byte_Battalion-Colour_Cargo_DragDropFixed\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:44:17-53
+85                android:value="true" />
+85-->[:unityLibrary] H:\Unity\Byte_Battalion-Colour_Cargo_DragDropFixed\Byte_Battalion-Colour_Cargo_DragDropFixed\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:45:17-37
+86        </activity>
+87
+88        <meta-data
+88-->[:unityLibrary] H:\Unity\Byte_Battalion-Colour_Cargo_DragDropFixed\Byte_Battalion-Colour_Cargo_DragDropFixed\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:48:9-50:33
+89            android:name="unity.splash-mode"
+89-->[:unityLibrary] H:\Unity\Byte_Battalion-Colour_Cargo_DragDropFixed\Byte_Battalion-Colour_Cargo_DragDropFixed\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:49:13-45
+90            android:value="0" />
+90-->[:unityLibrary] H:\Unity\Byte_Battalion-Colour_Cargo_DragDropFixed\Byte_Battalion-Colour_Cargo_DragDropFixed\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:50:13-30
+91        <meta-data
+91-->[:unityLibrary] H:\Unity\Byte_Battalion-Colour_Cargo_DragDropFixed\Byte_Battalion-Colour_Cargo_DragDropFixed\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:51:9-53:36
+92            android:name="unity.splash-enable"
+92-->[:unityLibrary] H:\Unity\Byte_Battalion-Colour_Cargo_DragDropFixed\Byte_Battalion-Colour_Cargo_DragDropFixed\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:52:13-47
+93            android:value="True" />
+93-->[:unityLibrary] H:\Unity\Byte_Battalion-Colour_Cargo_DragDropFixed\Byte_Battalion-Colour_Cargo_DragDropFixed\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:53:13-33
+94        <meta-data
+94-->[:unityLibrary] H:\Unity\Byte_Battalion-Colour_Cargo_DragDropFixed\Byte_Battalion-Colour_Cargo_DragDropFixed\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:54:9-56:36
+95            android:name="unity.launch-fullscreen"
+95-->[:unityLibrary] H:\Unity\Byte_Battalion-Colour_Cargo_DragDropFixed\Byte_Battalion-Colour_Cargo_DragDropFixed\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:55:13-51
+96            android:value="True" />
+96-->[:unityLibrary] H:\Unity\Byte_Battalion-Colour_Cargo_DragDropFixed\Byte_Battalion-Colour_Cargo_DragDropFixed\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:56:13-33
+97        <meta-data
+97-->[:unityLibrary] H:\Unity\Byte_Battalion-Colour_Cargo_DragDropFixed\Byte_Battalion-Colour_Cargo_DragDropFixed\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:57:9-59:37
+98            android:name="unity.allow-resizable-window"
+98-->[:unityLibrary] H:\Unity\Byte_Battalion-Colour_Cargo_DragDropFixed\Byte_Battalion-Colour_Cargo_DragDropFixed\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:58:13-56
+99            android:value="False" />
+99-->[:unityLibrary] H:\Unity\Byte_Battalion-Colour_Cargo_DragDropFixed\Byte_Battalion-Colour_Cargo_DragDropFixed\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:59:13-34
+100        <meta-data
+100-->[:unityLibrary] H:\Unity\Byte_Battalion-Colour_Cargo_DragDropFixed\Byte_Battalion-Colour_Cargo_DragDropFixed\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:60:9-62:50
+101            android:name="notch.config"
+101-->[:unityLibrary] H:\Unity\Byte_Battalion-Colour_Cargo_DragDropFixed\Byte_Battalion-Colour_Cargo_DragDropFixed\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:61:13-40
+102            android:value="portrait|landscape" />
+102-->[:unityLibrary] H:\Unity\Byte_Battalion-Colour_Cargo_DragDropFixed\Byte_Battalion-Colour_Cargo_DragDropFixed\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\AndroidManifest.xml:62:13-47
+103
+104        <activity
+104-->[com.google.android.gms:play-services-base:18.2.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\c9700c6349a4c42b0a1e8f4b59e2cd7e\jetified-play-services-base-18.2.0\AndroidManifest.xml:20:9-22:45
+105            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+105-->[com.google.android.gms:play-services-base:18.2.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\c9700c6349a4c42b0a1e8f4b59e2cd7e\jetified-play-services-base-18.2.0\AndroidManifest.xml:20:19-85
+106            android:exported="false"
+106-->[com.google.android.gms:play-services-base:18.2.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\c9700c6349a4c42b0a1e8f4b59e2cd7e\jetified-play-services-base-18.2.0\AndroidManifest.xml:22:19-43
+107            android:theme="@android:style/Theme.Translucent.NoTitleBar" /> <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
+107-->[com.google.android.gms:play-services-base:18.2.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\c9700c6349a4c42b0a1e8f4b59e2cd7e\jetified-play-services-base-18.2.0\AndroidManifest.xml:21:19-78
+108        <activity
+108-->[com.google.android.gms:play-services-ads-lite:22.5.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\809614d4b4c2d5551d3457131e50e85d\jetified-play-services-ads-lite-22.5.0\AndroidManifest.xml:56:9-61:43
+109            android:name="com.google.android.gms.ads.AdActivity"
+109-->[com.google.android.gms:play-services-ads-lite:22.5.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\809614d4b4c2d5551d3457131e50e85d\jetified-play-services-ads-lite-22.5.0\AndroidManifest.xml:57:13-65
+110            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+110-->[com.google.android.gms:play-services-ads-lite:22.5.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\809614d4b4c2d5551d3457131e50e85d\jetified-play-services-ads-lite-22.5.0\AndroidManifest.xml:58:13-122
+111            android:exported="false"
+111-->[com.google.android.gms:play-services-ads-lite:22.5.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\809614d4b4c2d5551d3457131e50e85d\jetified-play-services-ads-lite-22.5.0\AndroidManifest.xml:59:13-37
+112            android:theme="@android:style/Theme.Translucent" />
+112-->[com.google.android.gms:play-services-ads-lite:22.5.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\809614d4b4c2d5551d3457131e50e85d\jetified-play-services-ads-lite-22.5.0\AndroidManifest.xml:60:13-61
+113
+114        <provider
+114-->[com.google.android.gms:play-services-ads-lite:22.5.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\809614d4b4c2d5551d3457131e50e85d\jetified-play-services-ads-lite-22.5.0\AndroidManifest.xml:63:9-68:43
+115            android:name="com.google.android.gms.ads.MobileAdsInitProvider"
+115-->[com.google.android.gms:play-services-ads-lite:22.5.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\809614d4b4c2d5551d3457131e50e85d\jetified-play-services-ads-lite-22.5.0\AndroidManifest.xml:64:13-76
+116            android:authorities="com.color.cargo.bytebattalion.mobileadsinitprovider"
+116-->[com.google.android.gms:play-services-ads-lite:22.5.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\809614d4b4c2d5551d3457131e50e85d\jetified-play-services-ads-lite-22.5.0\AndroidManifest.xml:65:13-73
+117            android:exported="false"
+117-->[com.google.android.gms:play-services-ads-lite:22.5.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\809614d4b4c2d5551d3457131e50e85d\jetified-play-services-ads-lite-22.5.0\AndroidManifest.xml:66:13-37
+118            android:initOrder="100" />
+118-->[com.google.android.gms:play-services-ads-lite:22.5.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\809614d4b4c2d5551d3457131e50e85d\jetified-play-services-ads-lite-22.5.0\AndroidManifest.xml:67:13-36
+119
+120        <service
+120-->[com.google.android.gms:play-services-ads-lite:22.5.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\809614d4b4c2d5551d3457131e50e85d\jetified-play-services-ads-lite-22.5.0\AndroidManifest.xml:70:9-74:43
+121            android:name="com.google.android.gms.ads.AdService"
+121-->[com.google.android.gms:play-services-ads-lite:22.5.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\809614d4b4c2d5551d3457131e50e85d\jetified-play-services-ads-lite-22.5.0\AndroidManifest.xml:71:13-64
+122            android:enabled="true"
+122-->[com.google.android.gms:play-services-ads-lite:22.5.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\809614d4b4c2d5551d3457131e50e85d\jetified-play-services-ads-lite-22.5.0\AndroidManifest.xml:72:13-35
+123            android:exported="false" />
+123-->[com.google.android.gms:play-services-ads-lite:22.5.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\809614d4b4c2d5551d3457131e50e85d\jetified-play-services-ads-lite-22.5.0\AndroidManifest.xml:73:13-37
+124
+125        <activity
+125-->[com.google.android.gms:play-services-ads-lite:22.5.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\809614d4b4c2d5551d3457131e50e85d\jetified-play-services-ads-lite-22.5.0\AndroidManifest.xml:76:9-80:43
+126            android:name="com.google.android.gms.ads.OutOfContextTestingActivity"
+126-->[com.google.android.gms:play-services-ads-lite:22.5.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\809614d4b4c2d5551d3457131e50e85d\jetified-play-services-ads-lite-22.5.0\AndroidManifest.xml:77:13-82
+127            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+127-->[com.google.android.gms:play-services-ads-lite:22.5.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\809614d4b4c2d5551d3457131e50e85d\jetified-play-services-ads-lite-22.5.0\AndroidManifest.xml:78:13-122
+128            android:exported="false" />
+128-->[com.google.android.gms:play-services-ads-lite:22.5.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\809614d4b4c2d5551d3457131e50e85d\jetified-play-services-ads-lite-22.5.0\AndroidManifest.xml:79:13-37
+129
+130        <property
+130-->[com.google.android.gms:play-services-ads-lite:22.5.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\809614d4b4c2d5551d3457131e50e85d\jetified-play-services-ads-lite-22.5.0\AndroidManifest.xml:82:9-84:62
+131            android:name="android.adservices.AD_SERVICES_CONFIG"
+131-->[com.google.android.gms:play-services-ads-lite:22.5.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\809614d4b4c2d5551d3457131e50e85d\jetified-play-services-ads-lite-22.5.0\AndroidManifest.xml:83:13-65
+132            android:resource="@xml/gma_ad_services_config" />
+132-->[com.google.android.gms:play-services-ads-lite:22.5.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\809614d4b4c2d5551d3457131e50e85d\jetified-play-services-ads-lite-22.5.0\AndroidManifest.xml:84:13-59
+133
+134        <service
+134-->[com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\1438eb3fdfd2dacd77b964629fc14d2f\jetified-play-services-measurement-api-21.3.0\AndroidManifest.xml:28:9-34:19
+135            android:name="com.google.firebase.components.ComponentDiscoveryService"
+135-->[com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\1438eb3fdfd2dacd77b964629fc14d2f\jetified-play-services-measurement-api-21.3.0\AndroidManifest.xml:29:13-84
+136            android:directBootAware="true"
+136-->[com.google.firebase:firebase-common:20.3.3] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\810c9441472e538e625af9974bc2e9fd\jetified-firebase-common-20.3.3\AndroidManifest.xml:34:13-43
+137            android:exported="false" >
+137-->[com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\1438eb3fdfd2dacd77b964629fc14d2f\jetified-play-services-measurement-api-21.3.0\AndroidManifest.xml:30:13-37
+138            <meta-data
+138-->[com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\1438eb3fdfd2dacd77b964629fc14d2f\jetified-play-services-measurement-api-21.3.0\AndroidManifest.xml:31:13-33:85
+139                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+139-->[com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\1438eb3fdfd2dacd77b964629fc14d2f\jetified-play-services-measurement-api-21.3.0\AndroidManifest.xml:32:17-139
+140                android:value="com.google.firebase.components.ComponentRegistrar" />
+140-->[com.google.android.gms:play-services-measurement-api:21.3.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\1438eb3fdfd2dacd77b964629fc14d2f\jetified-play-services-measurement-api-21.3.0\AndroidManifest.xml:33:17-82
+141            <meta-data
+141-->[com.google.firebase:firebase-installations:17.0.1] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\153482778932b391400e048807aa7eea\jetified-firebase-installations-17.0.1\AndroidManifest.xml:18:13-20:85
+142                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+142-->[com.google.firebase:firebase-installations:17.0.1] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\153482778932b391400e048807aa7eea\jetified-firebase-installations-17.0.1\AndroidManifest.xml:19:17-127
+143                android:value="com.google.firebase.components.ComponentRegistrar" />
+143-->[com.google.firebase:firebase-installations:17.0.1] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\153482778932b391400e048807aa7eea\jetified-firebase-installations-17.0.1\AndroidManifest.xml:20:17-82
+144        </service>
+145
+146        <provider
+146-->[com.google.firebase:firebase-common:20.3.3] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\810c9441472e538e625af9974bc2e9fd\jetified-firebase-common-20.3.3\AndroidManifest.xml:25:9-30:39
+147            android:name="com.google.firebase.provider.FirebaseInitProvider"
+147-->[com.google.firebase:firebase-common:20.3.3] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\810c9441472e538e625af9974bc2e9fd\jetified-firebase-common-20.3.3\AndroidManifest.xml:26:13-77
+148            android:authorities="com.color.cargo.bytebattalion.firebaseinitprovider"
+148-->[com.google.firebase:firebase-common:20.3.3] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\810c9441472e538e625af9974bc2e9fd\jetified-firebase-common-20.3.3\AndroidManifest.xml:27:13-72
+149            android:directBootAware="true"
+149-->[com.google.firebase:firebase-common:20.3.3] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\810c9441472e538e625af9974bc2e9fd\jetified-firebase-common-20.3.3\AndroidManifest.xml:28:13-43
+150            android:exported="false"
+150-->[com.google.firebase:firebase-common:20.3.3] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\810c9441472e538e625af9974bc2e9fd\jetified-firebase-common-20.3.3\AndroidManifest.xml:29:13-37
+151            android:initOrder="100" />
+151-->[com.google.firebase:firebase-common:20.3.3] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\810c9441472e538e625af9974bc2e9fd\jetified-firebase-common-20.3.3\AndroidManifest.xml:30:13-36
+152
+153        <uses-library
+153-->[:unityLibrary:GoogleMobileAdsPlugin.androidlib] H:\Unity\Byte_Battalion-Colour_Cargo_DragDropFixed\Byte_Battalion-Colour_Cargo_DragDropFixed\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GoogleMobileAdsPlugin.androidlib\build\intermediates\merged_manifest\release\AndroidManifest.xml:12:9-14:40
+154            android:name="org.apache.http.legacy"
+154-->[:unityLibrary:GoogleMobileAdsPlugin.androidlib] H:\Unity\Byte_Battalion-Colour_Cargo_DragDropFixed\Byte_Battalion-Colour_Cargo_DragDropFixed\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GoogleMobileAdsPlugin.androidlib\build\intermediates\merged_manifest\release\AndroidManifest.xml:13:13-50
+155            android:required="false" />
+155-->[:unityLibrary:GoogleMobileAdsPlugin.androidlib] H:\Unity\Byte_Battalion-Colour_Cargo_DragDropFixed\Byte_Battalion-Colour_Cargo_DragDropFixed\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GoogleMobileAdsPlugin.androidlib\build\intermediates\merged_manifest\release\AndroidManifest.xml:14:13-37
+156
+157        <meta-data
+157-->[:unityLibrary:GoogleMobileAdsPlugin.androidlib] H:\Unity\Byte_Battalion-Colour_Cargo_DragDropFixed\Byte_Battalion-Colour_Cargo_DragDropFixed\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GoogleMobileAdsPlugin.androidlib\build\intermediates\merged_manifest\release\AndroidManifest.xml:16:9-18:70
+158            android:name="com.google.android.gms.ads.APPLICATION_ID"
+158-->[:unityLibrary:GoogleMobileAdsPlugin.androidlib] H:\Unity\Byte_Battalion-Colour_Cargo_DragDropFixed\Byte_Battalion-Colour_Cargo_DragDropFixed\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GoogleMobileAdsPlugin.androidlib\build\intermediates\merged_manifest\release\AndroidManifest.xml:17:13-69
+159            android:value="ca-app-pub-7418823270776132~7727137778" />
+159-->[:unityLibrary:GoogleMobileAdsPlugin.androidlib] H:\Unity\Byte_Battalion-Colour_Cargo_DragDropFixed\Byte_Battalion-Colour_Cargo_DragDropFixed\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GoogleMobileAdsPlugin.androidlib\build\intermediates\merged_manifest\release\AndroidManifest.xml:18:13-67
+160        <meta-data
+160-->[:unityLibrary:GoogleMobileAdsPlugin.androidlib] H:\Unity\Byte_Battalion-Colour_Cargo_DragDropFixed\Byte_Battalion-Colour_Cargo_DragDropFixed\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GoogleMobileAdsPlugin.androidlib\build\intermediates\merged_manifest\release\AndroidManifest.xml:19:9-21:43
+161            android:name="com.google.unity.ads.UNITY_VERSION"
+161-->[:unityLibrary:GoogleMobileAdsPlugin.androidlib] H:\Unity\Byte_Battalion-Colour_Cargo_DragDropFixed\Byte_Battalion-Colour_Cargo_DragDropFixed\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GoogleMobileAdsPlugin.androidlib\build\intermediates\merged_manifest\release\AndroidManifest.xml:20:13-62
+162            android:value="2021.3.19f1" />
+162-->[:unityLibrary:GoogleMobileAdsPlugin.androidlib] H:\Unity\Byte_Battalion-Colour_Cargo_DragDropFixed\Byte_Battalion-Colour_Cargo_DragDropFixed\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\GoogleMobileAdsPlugin.androidlib\build\intermediates\merged_manifest\release\AndroidManifest.xml:21:13-40
+163
+164        <receiver
+164-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\92887a4b13ce2338b5921543e6dd47f7\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:29:9-33:20
+165            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+165-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\92887a4b13ce2338b5921543e6dd47f7\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:30:13-85
+166            android:enabled="true"
+166-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\92887a4b13ce2338b5921543e6dd47f7\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:31:13-35
+167            android:exported="false" >
+167-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\92887a4b13ce2338b5921543e6dd47f7\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:32:13-37
+168        </receiver>
+169
+170        <service
+170-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\92887a4b13ce2338b5921543e6dd47f7\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:35:9-38:40
+171            android:name="com.google.android.gms.measurement.AppMeasurementService"
+171-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\92887a4b13ce2338b5921543e6dd47f7\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:36:13-84
+172            android:enabled="true"
+172-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\92887a4b13ce2338b5921543e6dd47f7\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:37:13-35
+173            android:exported="false" />
+173-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\92887a4b13ce2338b5921543e6dd47f7\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:38:13-37
+174        <service
+174-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\92887a4b13ce2338b5921543e6dd47f7\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:39:9-43:72
+175            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+175-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\92887a4b13ce2338b5921543e6dd47f7\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:40:13-87
+176            android:enabled="true"
+176-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\92887a4b13ce2338b5921543e6dd47f7\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:41:13-35
+177            android:exported="false"
+177-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\92887a4b13ce2338b5921543e6dd47f7\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:42:13-37
+178            android:permission="android.permission.BIND_JOB_SERVICE" />
+178-->[com.google.android.gms:play-services-measurement:21.3.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\92887a4b13ce2338b5921543e6dd47f7\jetified-play-services-measurement-21.3.0\AndroidManifest.xml:43:13-69
+179
+180        <meta-data
+180-->[com.google.android.gms:play-services-basement:18.2.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\58ba164bf91c4167fab01b5949e23b3c\jetified-play-services-basement-18.2.0\AndroidManifest.xml:21:9-23:69
+181            android:name="com.google.android.gms.version"
+181-->[com.google.android.gms:play-services-basement:18.2.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\58ba164bf91c4167fab01b5949e23b3c\jetified-play-services-basement-18.2.0\AndroidManifest.xml:22:13-58
+182            android:value="@integer/google_play_services_version" />
+182-->[com.google.android.gms:play-services-basement:18.2.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\58ba164bf91c4167fab01b5949e23b3c\jetified-play-services-basement-18.2.0\AndroidManifest.xml:23:13-66
+183
+184        <uses-library
+184-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\e3b3aacbbaf2c4fbb2e4f861f4b896f1\jetified-ads-adservices-1.0.0-beta05\AndroidManifest.xml:23:9-25:40
+185            android:name="android.ext.adservices"
+185-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\e3b3aacbbaf2c4fbb2e4f861f4b896f1\jetified-ads-adservices-1.0.0-beta05\AndroidManifest.xml:24:13-50
+186            android:required="false" />
+186-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\e3b3aacbbaf2c4fbb2e4f861f4b896f1\jetified-ads-adservices-1.0.0-beta05\AndroidManifest.xml:25:13-37
+187
+188        <provider
+188-->[androidx.work:work-runtime:2.7.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\71dfb2c4e7229d54e7a49533553926db\work-runtime-2.7.0\AndroidManifest.xml:31:9-39:20
+189            android:name="androidx.startup.InitializationProvider"
+189-->[androidx.work:work-runtime:2.7.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\71dfb2c4e7229d54e7a49533553926db\work-runtime-2.7.0\AndroidManifest.xml:32:13-67
+190            android:authorities="com.color.cargo.bytebattalion.androidx-startup"
+190-->[androidx.work:work-runtime:2.7.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\71dfb2c4e7229d54e7a49533553926db\work-runtime-2.7.0\AndroidManifest.xml:33:13-68
+191            android:exported="false" >
+191-->[androidx.work:work-runtime:2.7.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\71dfb2c4e7229d54e7a49533553926db\work-runtime-2.7.0\AndroidManifest.xml:34:13-37
+192            <meta-data
+192-->[androidx.work:work-runtime:2.7.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\71dfb2c4e7229d54e7a49533553926db\work-runtime-2.7.0\AndroidManifest.xml:36:13-38:52
+193                android:name="androidx.work.WorkManagerInitializer"
+193-->[androidx.work:work-runtime:2.7.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\71dfb2c4e7229d54e7a49533553926db\work-runtime-2.7.0\AndroidManifest.xml:37:17-68
+194                android:value="androidx.startup" />
+194-->[androidx.work:work-runtime:2.7.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\71dfb2c4e7229d54e7a49533553926db\work-runtime-2.7.0\AndroidManifest.xml:38:17-49
+195        </provider>
+196
+197        <service
+197-->[androidx.work:work-runtime:2.7.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\71dfb2c4e7229d54e7a49533553926db\work-runtime-2.7.0\AndroidManifest.xml:41:9-46:35
+198            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+198-->[androidx.work:work-runtime:2.7.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\71dfb2c4e7229d54e7a49533553926db\work-runtime-2.7.0\AndroidManifest.xml:42:13-88
+199            android:directBootAware="false"
+199-->[androidx.work:work-runtime:2.7.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\71dfb2c4e7229d54e7a49533553926db\work-runtime-2.7.0\AndroidManifest.xml:43:13-44
+200            android:enabled="@bool/enable_system_alarm_service_default"
+200-->[androidx.work:work-runtime:2.7.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\71dfb2c4e7229d54e7a49533553926db\work-runtime-2.7.0\AndroidManifest.xml:44:13-72
+201            android:exported="false" />
+201-->[androidx.work:work-runtime:2.7.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\71dfb2c4e7229d54e7a49533553926db\work-runtime-2.7.0\AndroidManifest.xml:45:13-37
+202        <service
+202-->[androidx.work:work-runtime:2.7.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\71dfb2c4e7229d54e7a49533553926db\work-runtime-2.7.0\AndroidManifest.xml:47:9-53:35
+203            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+203-->[androidx.work:work-runtime:2.7.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\71dfb2c4e7229d54e7a49533553926db\work-runtime-2.7.0\AndroidManifest.xml:48:13-84
+204            android:directBootAware="false"
+204-->[androidx.work:work-runtime:2.7.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\71dfb2c4e7229d54e7a49533553926db\work-runtime-2.7.0\AndroidManifest.xml:49:13-44
+205            android:enabled="@bool/enable_system_job_service_default"
+205-->[androidx.work:work-runtime:2.7.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\71dfb2c4e7229d54e7a49533553926db\work-runtime-2.7.0\AndroidManifest.xml:50:13-70
+206            android:exported="true"
+206-->[androidx.work:work-runtime:2.7.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\71dfb2c4e7229d54e7a49533553926db\work-runtime-2.7.0\AndroidManifest.xml:51:13-36
+207            android:permission="android.permission.BIND_JOB_SERVICE" />
+207-->[androidx.work:work-runtime:2.7.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\71dfb2c4e7229d54e7a49533553926db\work-runtime-2.7.0\AndroidManifest.xml:52:13-69
+208        <service
+208-->[androidx.work:work-runtime:2.7.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\71dfb2c4e7229d54e7a49533553926db\work-runtime-2.7.0\AndroidManifest.xml:54:9-59:35
+209            android:name="androidx.work.impl.foreground.SystemForegroundService"
+209-->[androidx.work:work-runtime:2.7.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\71dfb2c4e7229d54e7a49533553926db\work-runtime-2.7.0\AndroidManifest.xml:55:13-81
+210            android:directBootAware="false"
+210-->[androidx.work:work-runtime:2.7.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\71dfb2c4e7229d54e7a49533553926db\work-runtime-2.7.0\AndroidManifest.xml:56:13-44
+211            android:enabled="@bool/enable_system_foreground_service_default"
+211-->[androidx.work:work-runtime:2.7.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\71dfb2c4e7229d54e7a49533553926db\work-runtime-2.7.0\AndroidManifest.xml:57:13-77
+212            android:exported="false" />
+212-->[androidx.work:work-runtime:2.7.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\71dfb2c4e7229d54e7a49533553926db\work-runtime-2.7.0\AndroidManifest.xml:58:13-37
+213
+214        <receiver
+214-->[androidx.work:work-runtime:2.7.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\71dfb2c4e7229d54e7a49533553926db\work-runtime-2.7.0\AndroidManifest.xml:61:9-66:35
+215            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+215-->[androidx.work:work-runtime:2.7.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\71dfb2c4e7229d54e7a49533553926db\work-runtime-2.7.0\AndroidManifest.xml:62:13-88
+216            android:directBootAware="false"
+216-->[androidx.work:work-runtime:2.7.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\71dfb2c4e7229d54e7a49533553926db\work-runtime-2.7.0\AndroidManifest.xml:63:13-44
+217            android:enabled="true"
+217-->[androidx.work:work-runtime:2.7.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\71dfb2c4e7229d54e7a49533553926db\work-runtime-2.7.0\AndroidManifest.xml:64:13-35
+218            android:exported="false" />
+218-->[androidx.work:work-runtime:2.7.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\71dfb2c4e7229d54e7a49533553926db\work-runtime-2.7.0\AndroidManifest.xml:65:13-37
+219        <receiver
+219-->[androidx.work:work-runtime:2.7.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\71dfb2c4e7229d54e7a49533553926db\work-runtime-2.7.0\AndroidManifest.xml:67:9-77:20
+220            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+220-->[androidx.work:work-runtime:2.7.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\71dfb2c4e7229d54e7a49533553926db\work-runtime-2.7.0\AndroidManifest.xml:68:13-106
+221            android:directBootAware="false"
+221-->[androidx.work:work-runtime:2.7.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\71dfb2c4e7229d54e7a49533553926db\work-runtime-2.7.0\AndroidManifest.xml:69:13-44
+222            android:enabled="false"
+222-->[androidx.work:work-runtime:2.7.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\71dfb2c4e7229d54e7a49533553926db\work-runtime-2.7.0\AndroidManifest.xml:70:13-36
+223            android:exported="false" >
+223-->[androidx.work:work-runtime:2.7.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\71dfb2c4e7229d54e7a49533553926db\work-runtime-2.7.0\AndroidManifest.xml:71:13-37
+224            <intent-filter>
+224-->[androidx.work:work-runtime:2.7.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\71dfb2c4e7229d54e7a49533553926db\work-runtime-2.7.0\AndroidManifest.xml:73:13-76:29
+225                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+225-->[androidx.work:work-runtime:2.7.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\71dfb2c4e7229d54e7a49533553926db\work-runtime-2.7.0\AndroidManifest.xml:74:17-87
+225-->[androidx.work:work-runtime:2.7.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\71dfb2c4e7229d54e7a49533553926db\work-runtime-2.7.0\AndroidManifest.xml:74:25-84
+226                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+226-->[androidx.work:work-runtime:2.7.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\71dfb2c4e7229d54e7a49533553926db\work-runtime-2.7.0\AndroidManifest.xml:75:17-90
+226-->[androidx.work:work-runtime:2.7.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\71dfb2c4e7229d54e7a49533553926db\work-runtime-2.7.0\AndroidManifest.xml:75:25-87
+227            </intent-filter>
+228        </receiver>
+229        <receiver
+229-->[androidx.work:work-runtime:2.7.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\71dfb2c4e7229d54e7a49533553926db\work-runtime-2.7.0\AndroidManifest.xml:78:9-88:20
+230            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+230-->[androidx.work:work-runtime:2.7.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\71dfb2c4e7229d54e7a49533553926db\work-runtime-2.7.0\AndroidManifest.xml:79:13-104
+231            android:directBootAware="false"
+231-->[androidx.work:work-runtime:2.7.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\71dfb2c4e7229d54e7a49533553926db\work-runtime-2.7.0\AndroidManifest.xml:80:13-44
+232            android:enabled="false"
+232-->[androidx.work:work-runtime:2.7.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\71dfb2c4e7229d54e7a49533553926db\work-runtime-2.7.0\AndroidManifest.xml:81:13-36
+233            android:exported="false" >
+233-->[androidx.work:work-runtime:2.7.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\71dfb2c4e7229d54e7a49533553926db\work-runtime-2.7.0\AndroidManifest.xml:82:13-37
+234            <intent-filter>
+234-->[androidx.work:work-runtime:2.7.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\71dfb2c4e7229d54e7a49533553926db\work-runtime-2.7.0\AndroidManifest.xml:84:13-87:29
+235                <action android:name="android.intent.action.BATTERY_OKAY" />
+235-->[androidx.work:work-runtime:2.7.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\71dfb2c4e7229d54e7a49533553926db\work-runtime-2.7.0\AndroidManifest.xml:85:17-77
+235-->[androidx.work:work-runtime:2.7.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\71dfb2c4e7229d54e7a49533553926db\work-runtime-2.7.0\AndroidManifest.xml:85:25-74
+236                <action android:name="android.intent.action.BATTERY_LOW" />
+236-->[androidx.work:work-runtime:2.7.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\71dfb2c4e7229d54e7a49533553926db\work-runtime-2.7.0\AndroidManifest.xml:86:17-76
+236-->[androidx.work:work-runtime:2.7.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\71dfb2c4e7229d54e7a49533553926db\work-runtime-2.7.0\AndroidManifest.xml:86:25-73
+237            </intent-filter>
+238        </receiver>
+239        <receiver
+239-->[androidx.work:work-runtime:2.7.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\71dfb2c4e7229d54e7a49533553926db\work-runtime-2.7.0\AndroidManifest.xml:89:9-99:20
+240            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+240-->[androidx.work:work-runtime:2.7.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\71dfb2c4e7229d54e7a49533553926db\work-runtime-2.7.0\AndroidManifest.xml:90:13-104
+241            android:directBootAware="false"
+241-->[androidx.work:work-runtime:2.7.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\71dfb2c4e7229d54e7a49533553926db\work-runtime-2.7.0\AndroidManifest.xml:91:13-44
+242            android:enabled="false"
+242-->[androidx.work:work-runtime:2.7.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\71dfb2c4e7229d54e7a49533553926db\work-runtime-2.7.0\AndroidManifest.xml:92:13-36
+243            android:exported="false" >
+243-->[androidx.work:work-runtime:2.7.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\71dfb2c4e7229d54e7a49533553926db\work-runtime-2.7.0\AndroidManifest.xml:93:13-37
+244            <intent-filter>
+244-->[androidx.work:work-runtime:2.7.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\71dfb2c4e7229d54e7a49533553926db\work-runtime-2.7.0\AndroidManifest.xml:95:13-98:29
+245                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+245-->[androidx.work:work-runtime:2.7.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\71dfb2c4e7229d54e7a49533553926db\work-runtime-2.7.0\AndroidManifest.xml:96:17-83
+245-->[androidx.work:work-runtime:2.7.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\71dfb2c4e7229d54e7a49533553926db\work-runtime-2.7.0\AndroidManifest.xml:96:25-80
+246                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
+246-->[androidx.work:work-runtime:2.7.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\71dfb2c4e7229d54e7a49533553926db\work-runtime-2.7.0\AndroidManifest.xml:97:17-82
+246-->[androidx.work:work-runtime:2.7.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\71dfb2c4e7229d54e7a49533553926db\work-runtime-2.7.0\AndroidManifest.xml:97:25-79
+247            </intent-filter>
+248        </receiver>
+249        <receiver
+249-->[androidx.work:work-runtime:2.7.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\71dfb2c4e7229d54e7a49533553926db\work-runtime-2.7.0\AndroidManifest.xml:100:9-109:20
+250            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+250-->[androidx.work:work-runtime:2.7.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\71dfb2c4e7229d54e7a49533553926db\work-runtime-2.7.0\AndroidManifest.xml:101:13-103
+251            android:directBootAware="false"
+251-->[androidx.work:work-runtime:2.7.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\71dfb2c4e7229d54e7a49533553926db\work-runtime-2.7.0\AndroidManifest.xml:102:13-44
+252            android:enabled="false"
+252-->[androidx.work:work-runtime:2.7.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\71dfb2c4e7229d54e7a49533553926db\work-runtime-2.7.0\AndroidManifest.xml:103:13-36
+253            android:exported="false" >
+253-->[androidx.work:work-runtime:2.7.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\71dfb2c4e7229d54e7a49533553926db\work-runtime-2.7.0\AndroidManifest.xml:104:13-37
+254            <intent-filter>
+254-->[androidx.work:work-runtime:2.7.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\71dfb2c4e7229d54e7a49533553926db\work-runtime-2.7.0\AndroidManifest.xml:106:13-108:29
+255                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+255-->[androidx.work:work-runtime:2.7.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\71dfb2c4e7229d54e7a49533553926db\work-runtime-2.7.0\AndroidManifest.xml:107:17-79
+255-->[androidx.work:work-runtime:2.7.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\71dfb2c4e7229d54e7a49533553926db\work-runtime-2.7.0\AndroidManifest.xml:107:25-76
+256            </intent-filter>
+257        </receiver>
+258        <receiver
+258-->[androidx.work:work-runtime:2.7.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\71dfb2c4e7229d54e7a49533553926db\work-runtime-2.7.0\AndroidManifest.xml:110:9-121:20
+259            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+259-->[androidx.work:work-runtime:2.7.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\71dfb2c4e7229d54e7a49533553926db\work-runtime-2.7.0\AndroidManifest.xml:111:13-88
+260            android:directBootAware="false"
+260-->[androidx.work:work-runtime:2.7.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\71dfb2c4e7229d54e7a49533553926db\work-runtime-2.7.0\AndroidManifest.xml:112:13-44
+261            android:enabled="false"
+261-->[androidx.work:work-runtime:2.7.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\71dfb2c4e7229d54e7a49533553926db\work-runtime-2.7.0\AndroidManifest.xml:113:13-36
+262            android:exported="false" >
+262-->[androidx.work:work-runtime:2.7.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\71dfb2c4e7229d54e7a49533553926db\work-runtime-2.7.0\AndroidManifest.xml:114:13-37
+263            <intent-filter>
+263-->[androidx.work:work-runtime:2.7.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\71dfb2c4e7229d54e7a49533553926db\work-runtime-2.7.0\AndroidManifest.xml:116:13-120:29
+264                <action android:name="android.intent.action.BOOT_COMPLETED" />
+264-->[androidx.work:work-runtime:2.7.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\71dfb2c4e7229d54e7a49533553926db\work-runtime-2.7.0\AndroidManifest.xml:117:17-79
+264-->[androidx.work:work-runtime:2.7.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\71dfb2c4e7229d54e7a49533553926db\work-runtime-2.7.0\AndroidManifest.xml:117:25-76
+265                <action android:name="android.intent.action.TIME_SET" />
+265-->[androidx.work:work-runtime:2.7.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\71dfb2c4e7229d54e7a49533553926db\work-runtime-2.7.0\AndroidManifest.xml:118:17-73
+265-->[androidx.work:work-runtime:2.7.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\71dfb2c4e7229d54e7a49533553926db\work-runtime-2.7.0\AndroidManifest.xml:118:25-70
+266                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+266-->[androidx.work:work-runtime:2.7.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\71dfb2c4e7229d54e7a49533553926db\work-runtime-2.7.0\AndroidManifest.xml:119:17-81
+266-->[androidx.work:work-runtime:2.7.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\71dfb2c4e7229d54e7a49533553926db\work-runtime-2.7.0\AndroidManifest.xml:119:25-78
+267            </intent-filter>
+268        </receiver>
+269        <receiver
+269-->[androidx.work:work-runtime:2.7.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\71dfb2c4e7229d54e7a49533553926db\work-runtime-2.7.0\AndroidManifest.xml:122:9-131:20
+270            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+270-->[androidx.work:work-runtime:2.7.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\71dfb2c4e7229d54e7a49533553926db\work-runtime-2.7.0\AndroidManifest.xml:123:13-99
+271            android:directBootAware="false"
+271-->[androidx.work:work-runtime:2.7.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\71dfb2c4e7229d54e7a49533553926db\work-runtime-2.7.0\AndroidManifest.xml:124:13-44
+272            android:enabled="@bool/enable_system_alarm_service_default"
+272-->[androidx.work:work-runtime:2.7.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\71dfb2c4e7229d54e7a49533553926db\work-runtime-2.7.0\AndroidManifest.xml:125:13-72
+273            android:exported="false" >
+273-->[androidx.work:work-runtime:2.7.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\71dfb2c4e7229d54e7a49533553926db\work-runtime-2.7.0\AndroidManifest.xml:126:13-37
+274            <intent-filter>
+274-->[androidx.work:work-runtime:2.7.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\71dfb2c4e7229d54e7a49533553926db\work-runtime-2.7.0\AndroidManifest.xml:128:13-130:29
+275                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+275-->[androidx.work:work-runtime:2.7.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\71dfb2c4e7229d54e7a49533553926db\work-runtime-2.7.0\AndroidManifest.xml:129:17-98
+275-->[androidx.work:work-runtime:2.7.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\71dfb2c4e7229d54e7a49533553926db\work-runtime-2.7.0\AndroidManifest.xml:129:25-95
+276            </intent-filter>
+277        </receiver>
+278        <receiver
+278-->[androidx.work:work-runtime:2.7.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\71dfb2c4e7229d54e7a49533553926db\work-runtime-2.7.0\AndroidManifest.xml:132:9-142:20
+279            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
+279-->[androidx.work:work-runtime:2.7.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\71dfb2c4e7229d54e7a49533553926db\work-runtime-2.7.0\AndroidManifest.xml:133:13-78
+280            android:directBootAware="false"
+280-->[androidx.work:work-runtime:2.7.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\71dfb2c4e7229d54e7a49533553926db\work-runtime-2.7.0\AndroidManifest.xml:134:13-44
+281            android:enabled="true"
+281-->[androidx.work:work-runtime:2.7.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\71dfb2c4e7229d54e7a49533553926db\work-runtime-2.7.0\AndroidManifest.xml:135:13-35
+282            android:exported="true"
+282-->[androidx.work:work-runtime:2.7.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\71dfb2c4e7229d54e7a49533553926db\work-runtime-2.7.0\AndroidManifest.xml:136:13-36
+283            android:permission="android.permission.DUMP" >
+283-->[androidx.work:work-runtime:2.7.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\71dfb2c4e7229d54e7a49533553926db\work-runtime-2.7.0\AndroidManifest.xml:137:13-57
+284            <intent-filter>
+284-->[androidx.work:work-runtime:2.7.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\71dfb2c4e7229d54e7a49533553926db\work-runtime-2.7.0\AndroidManifest.xml:139:13-141:29
+285                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
+285-->[androidx.work:work-runtime:2.7.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\71dfb2c4e7229d54e7a49533553926db\work-runtime-2.7.0\AndroidManifest.xml:140:17-88
+285-->[androidx.work:work-runtime:2.7.0] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\71dfb2c4e7229d54e7a49533553926db\work-runtime-2.7.0\AndroidManifest.xml:140:25-85
+286            </intent-filter>
+287        </receiver>
+288
+289        <service
+289-->[androidx.room:room-runtime:2.2.5] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\7239a2b5216045d88edc1e35c416d6d9\room-runtime-2.2.5\AndroidManifest.xml:25:9-28:40
+290            android:name="androidx.room.MultiInstanceInvalidationService"
+290-->[androidx.room:room-runtime:2.2.5] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\7239a2b5216045d88edc1e35c416d6d9\room-runtime-2.2.5\AndroidManifest.xml:26:13-74
+291            android:directBootAware="true"
+291-->[androidx.room:room-runtime:2.2.5] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\7239a2b5216045d88edc1e35c416d6d9\room-runtime-2.2.5\AndroidManifest.xml:27:13-43
+292            android:exported="false" />
+292-->[androidx.room:room-runtime:2.2.5] C:\Users\hamid\.gradle\caches\transforms-2\files-2.1\7239a2b5216045d88edc1e35c416d6d9\room-runtime-2.2.5\AndroidManifest.xml:28:13-37
+293    </application>
+294
+295</manifest>
