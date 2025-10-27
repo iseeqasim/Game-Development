@@ -3,6 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{829E4AA5-8363-1B98-3D68-3AF21FB97CC1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IngameDebugConsole.Runtime", "IngameDebugConsole.Runtime.csproj", "{CFB40B48-8304-222E-51FB-035FBD38C3D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoogleMobileAds.Editor", "GoogleMobileAds.Editor.csproj", "{ACF28707-CA4B-64D3-6229-D5387BA7D009}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IngameDebugConsole.Editor", "IngameDebugConsole.Editor.csproj", "{1E422CDE-C980-4EA5-879F-457C6A2EF32A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +19,18 @@ Global
 		{829E4AA5-8363-1B98-3D68-3AF21FB97CC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{829E4AA5-8363-1B98-3D68-3AF21FB97CC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{829E4AA5-8363-1B98-3D68-3AF21FB97CC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFB40B48-8304-222E-51FB-035FBD38C3D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFB40B48-8304-222E-51FB-035FBD38C3D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFB40B48-8304-222E-51FB-035FBD38C3D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFB40B48-8304-222E-51FB-035FBD38C3D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ACF28707-CA4B-64D3-6229-D5387BA7D009}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACF28707-CA4B-64D3-6229-D5387BA7D009}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACF28707-CA4B-64D3-6229-D5387BA7D009}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACF28707-CA4B-64D3-6229-D5387BA7D009}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E422CDE-C980-4EA5-879F-457C6A2EF32A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E422CDE-C980-4EA5-879F-457C6A2EF32A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E422CDE-C980-4EA5-879F-457C6A2EF32A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E422CDE-C980-4EA5-879F-457C6A2EF32A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
